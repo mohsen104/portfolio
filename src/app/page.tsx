@@ -1,9 +1,23 @@
-import MySkills from "@/components/MySkills";
+import About from "@/components/About";
+import Contact from "@/components/Contact";
+import Experience from "@/components/Experience";
+import Footer from "@/components/Footer";
+import Header from "@/components/Header";
+import Hero from "@/components/Hero";
+import Projects from "@/components/Projects";
+import Skills from "@/components/Skills";
 
-export default function Home() {
+export default function Page() {
   return (
-    <div className="container mx-auto max-w-7xl px-4">
-      <MySkills />
-    </div>
+    <main className="bg-white text-black antialiased">
+      <Header />
+      <Hero />
+      <Skills />
+      <Experience />
+      <About />
+      <Projects />
+      <Contact />
+      <Footer />
+    </main>
   );
 }

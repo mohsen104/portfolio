@@ -4,6 +4,7 @@
   --font-jetbrains-mono: var(--font-jetbrains-mono);
 }
 
-body {
+* {
   font-family: var(--font-jetbrains-mono), sans-serif;
+  scroll-behavior: smooth;
 }
