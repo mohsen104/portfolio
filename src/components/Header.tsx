@@ -2,7 +2,7 @@ import { ChevronDown } from "./Shared/Icons";
 
 export default function Header() {
   return (
-    <header className="sticky top-0 z-50 border-b-2 border-neutral-200 bg-white/90 backdrop-blur">
+    <header className="sticky top-0 z-50 border-b-2 border-neutral-200 bg-white/70 backdrop-blur">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-4 md:px-6">
         <a
           href="#"

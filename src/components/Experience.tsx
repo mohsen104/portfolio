@@ -6,9 +6,9 @@ export default function Experience() {
           My <span className="font-black">Experience</span>
         </h3>
 
-        <div className="space-y-10 text-[13px] leading-6">
+        <div className="space-y-10 text-sm leading-6">
           <article className="rounded-xl border-2 border-white/15 bg-white/5 p-5">
-            <div className="flex items-start justify-between">
+            <div className="flex flex-wrap gap-1 items-start justify-between">
               <div>
                 <h4 className="text-lg font-extrabold">Fara Ofogh</h4>
                 <div className="mt-0.5 text-sm text-neutral-300">
@@ -49,7 +49,7 @@ export default function Experience() {
           </article>
 
           <article className="rounded-xl border-2 border-white/15 bg-white/5 p-5">
-            <div className="flex items-start justify-between">
+            <div className="flex flex-wrap gap-1 items-start justify-between">
               <div>
                 <h4 className="text-lg font-extrabold">Dubz</h4>
                 <div className="mt-0.5 text-sm text-neutral-300">
@@ -84,7 +84,7 @@ export default function Experience() {
           </article>
 
           <article className="rounded-xl border-2 border-white/15 bg-white/5 p-5">
-            <div className="flex items-start justify-between">
+            <div className="flex flex-wrap gap-1 items-start justify-between">
               <div>
                 <h4 className="text-lg font-extrabold">Manzoomeh Negaran</h4>
                 <div className="mt-0.5 text-sm text-neutral-300">

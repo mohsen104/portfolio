@@ -28,7 +28,11 @@ export default function Hero() {
           </p>
 
           <div className="mt-6 flex items-center gap-3">
-            <a href="https://github.com/mohsen104" target="_blank" rel="noopener">
+            <a
+              href="https://github.com/mohsen104"
+              target="_blank"
+              rel="noopener"
+            >
               <IconButton ariaLabel="GitHub">
                 <GitHub />
               </IconButton>
@@ -54,7 +58,7 @@ export default function Hero() {
           </div>
         </div>
 
-        <div className="relative mx-auto w-full max-w-[420px]">
+        <div className="relative mx-auto w-full max-w-md">
           <HeroIllustration />
         </div>
       </div>
@@ -101,11 +105,6 @@ function HeroIllustration() {
       <path
         d="M203.937 326.185C261.852 314.178 377.684 300.971 377.684 344.196C377.684 387.42 324.006 411.849 297.167 418.659M377.684 98.3068C370.621 101.518 355.648 116.629 352.257 151.379C348.02 194.815 334.417 209.647 323.397 209.647M312.582 211.766C303.559 216.71 283.818 220.454 277.038 195.875C268.562 165.151 250.879 148.2 231.116 153.497M409.467 110.061C407.348 109.165 373.446 132.309 370.268 185.28C367.09 238.252 333.188 337.839 263.265 284.867C236.777 258.381 211.256 241.784 206.97 243.549M285.513 418.339C295.048 409.163 311.575 387.844 301.405 375.979C291.234 364.113 235.603 380.216 209.059 389.751M448.453 158.795C425.57 172.92 383.405 217.911 397.813 284.867C410.526 323.007 433.759 319.122 443.786 312.413M439.952 364.325C426.259 364.505 400.144 376.254 405.229 421.805"
         stroke="white"
-        strokeWidth="0.970341"
-      />
-      <path
-        d="M317.294 417.293V239.308"
-        stroke="#027269"
         strokeWidth="0.970341"
       />
       <path
