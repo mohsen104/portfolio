@@ -27,22 +27,45 @@ export default function Experience() {
               <ul className="list-disc space-y-1 pl-5 text-neutral-200">
                 <li>
                   Built a nationwide vehicle management dashboard using
-                  React.js, TailwindCSS, Ant Design, and TypeScript
+                  React.js, TailwindCSS, Ant Design, and TypeScript.
                 </li>
                 <li>
-                  Optimized Performance, Accessibility, and Code Quality,
-                  achieving a score improvement from 60 to 95.
+                  Optimized performance, accessibility, and code quality,
+                  improving overall scores from 50 to 95.
                 </li>
                 <li>
-                  Developed a high-performance GIS system with Maplibre,
-                  handling thousands of real-time data points
+                  Developed a high-performance GIS system with Maplibre, capable
+                  of handling thousands of real-time data points.
                 </li>
                 <li>
-                  Integrated real-time communication via WebSocket and SignalR
+                  Integrated real-time communication using WebSocket and
+                  SignalR.
+                </li>
+                <li>Implemented a type-safe API layer.</li>
+                <li>
+                  Dockerized the entire frontend for scalable and efficient
+                  deployment.
                 </li>
                 <li>
-                  Implemented a Type-Safe API layer and Dockerized the entire
-                  frontend for scalable deployment
+                  Built an admin-side icon selector system similar to React
+                  Icons for panel icon management.
+                </li>
+                <li>
+                  Implemented a real-time connection log terminal to monitor
+                  connection and disconnection events.
+                </li>
+                <li>
+                  Developed a fully secure authentication & authorization
+                  system.
+                </li>
+                <li>
+                  Configured enterprise-level ESLint and Husky setup for
+                  commit-time formatting and linting.
+                </li>
+                <li>Created backend API response mocks using MSW.</li>
+                <li>
+                  Implemented professional configurations for Vite and React 19,
+                  resulting in 80% reduction in bundle size.
                 </li>
               </ul>
             </div>
@@ -67,8 +90,8 @@ export default function Experience() {
               <div className="font-semibold">Real Estate Management Panel</div>
               <ul className="list-disc space-y-1 pl-5 text-neutral-200">
                 <li>
-                  Developed a responsive management platform using React.js and
-                  Next.js
+                  Developed a responsive real estate management platform using
+                  React.js and Next.js.
                 </li>
                 <li>
                   Optimized application performance through Code Splitting, Lazy
@@ -76,8 +99,8 @@ export default function Experience() {
                 </li>
                 <li>Implemented PWA for offline access and improved UX</li>
                 <li>
-                  Built reusable, modular components and collaborated with the
-                  backend team (Node.js, MongoDB)
+                  Provided guidance to the backend team (Node.js, MongoDB) while
+                  building reusable, modular frontend components.
                 </li>
               </ul>
             </div>
@@ -104,7 +127,15 @@ export default function Experience() {
               </div>
               <ul className="list-disc space-y-1 pl-5 text-neutral-200">
                 <li>
-                  Delivered core modules including Task Management, CRM, and ERP
+                  Implemented Task Manager and CRM modules for a large-scale ERP
+                  services project.
+                </li>
+                <li>
+                  Developed a website for delivering IoT services and products.
+                </li>
+                <li>
+                  Built an international service website for a UAE-based airline
+                  agency.
                 </li>
                 <li>
                   Collaborated with UI/UX and backend teams for API integration
@@ -112,10 +143,6 @@ export default function Experience() {
                 </li>
                 <li>
                   Contributed to SQL query writing and data optimization tasks
-                </li>
-                <li>
-                  Developed and maintained several internal and client-facing
-                  web applications
                 </li>
               </ul>
             </div>

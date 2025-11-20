@@ -1,5 +1,48 @@
 import Image from "next/image";
 
+const projects = [
+  {
+    title: "Admin Panel (Dashboard)",
+    description:
+      "A modern responsive admin dashboard built with Next js and TailwindCSS, featuring user and role management, real-time data visualization, interactive charts, sortable tables, and authentication system. Modular structure, and optimized codebase for scalability.",
+    imageSrc: "/project-1.png",
+    imageAlt: "Admin Panel preview",
+    href: "https://admin-panel-theta-teal.vercel.app/",
+  },
+  {
+    title: "Crypto Tracker Application",
+    description:
+      "A real-time cryptocurrency tracking platform with live market data, dynamic price updates, and detailed coin analytics. Includes search, sorting, watchlist functionality, and responsive charts powered by APIs. Built with React, TypeScript, and TailwindCSS for seamless performance.",
+    imageSrc: "/project-2.png",
+    imageAlt: "Crypto Tracker preview",
+    href: "https://crypto-app-one-sigma.vercel.app/",
+  },
+  {
+    title: "Levenshtein Playground",
+    description:
+      "A minimal interactive playground for testing the Levenshtein Distance — the same typo-tolerance algorithm used by Google. Type a word and a text, and it instantly shows the closest match and similarity score. Built with Next.js & TailwindCSS.",
+    imageSrc: "/project-5.png",
+    imageAlt: "Levenshtein Playground",
+    href: "https://levenshtein-playground.vercel.app/",
+  },
+  {
+    title: "Mobile Shop (E-commerce)",
+    description:
+      "A clean and minimal e-commerce web app for mobile devices. Includes product listing, filtering, cart management, and responsive layout. Designed for fast browsing experience and optimized for conversions. Built with Next js and TailwindCSS following best UI practices.",
+    imageSrc: "/project-3.png",
+    imageAlt: "Mobile Shop preview",
+    href: "https://mobile-shop-rust.vercel.app/",
+  },
+  {
+    title: "AI Chat Interface",
+    description:
+      "A clean, responsive ChatGPT-style UI with streaming responses, Markdown rendering (code blocks, lists), and message persistence. Supports keyboard shortcuts, system prompts. Built with Next, TypeScript, and TailwindCSS focusing on accessibility and smooth UX.",
+    imageSrc: "/project-4.png",
+    imageAlt: "AI Chat Interface preview",
+    href: "https://chat-openai-one.vercel.app/",
+  },
+];
+
 export default function Projects() {
   return (
     <section id="projects" className="bg-black py-20 text-white">
@@ -9,156 +52,50 @@ export default function Projects() {
         </h3>
 
         <div className="grid gap-20">
-          <div className="grid items-start gap-10 md:grid-cols-2">
-            <Image
-              src="/project-1.png"
-              alt="Admin Panel preview"
-              className="h-auto w-full rounded-2xl shadow-[0_0_0_1px_rgba(255,255,255,0.15)]"
-              width={600}
-              height={400}
-            />
-            <div>
-              <div className="text-3xl font-extrabold">01</div>
-              <h4 className="mt-2 text-xl font-bold">
-                Admin Panel (Dashboard)
-              </h4>
-              <p className="mt-3 max-w-xl text-sm leading-6 text-white/70">
-                A modern responsive admin dashboard built with Next js and
-                TailwindCSS, featuring user and role management, real-time data
-                visualization, interactive charts, sortable tables, and
-                authentication system. Modular structure, and optimized codebase
-                for scalability.
-              </p>
-              <a
-                href="https://admin-panel-theta-teal.vercel.app/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-4 inline-flex items-center gap-2 text-sm text-white/80"
-              >
-                Visit project
-                <svg viewBox="0 0 24 24" className="h-4 w-4" fill="none">
-                  <path
-                    d="M7 17L17 7M9 7h8v8"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                  />
-                </svg>
-              </a>
-            </div>
-          </div>
+          {projects.map((project, index) => {
+            const numberLabel = String(index + 1).padStart(2, "0");
+            const isEven = index % 2 === 1;
 
-          <div className="grid items-center gap-10 md:grid-cols-2">
-            <div className="order-2 md:order-1">
-              <div className="text-3xl font-extrabold">02</div>
-              <h4 className="mt-2 text-xl font-bold">
-                Crypto Tracker Application
-              </h4>
-              <p className="mt-3 max-w-xl text-sm leading-6 text-white/70">
-                A real-time cryptocurrency tracking platform with live market
-                data, dynamic price updates, and detailed coin analytics.
-                Includes search, sorting, watchlist functionality, and
-                responsive charts powered by APIs. Built with React, TypeScript,
-                and TailwindCSS for seamless performance.
-              </p>
-              <a
-                href="https://crypto-app-one-sigma.vercel.app/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-4 inline-flex items-center gap-2 text-sm text-white/80"
-              >
-                Visit project
-                <svg viewBox="0 0 24 24" className="h-4 w-4" fill="none">
-                  <path
-                    d="M7 17L17 7M9 7h8v8"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                  />
-                </svg>
-              </a>
-            </div>
-            <Image
-              src="/project-2.png"
-              alt="Crypto Tracker preview"
-              className="order-1 h-auto w-full rounded-2xl shadow-[0_0_0_1px_rgba(255,255,255,0.15)] md:order-2"
-              width={600}
-              height={400}
-            />
-          </div>
+            return (
+              <div
+                key={project.title}
+                className={`grid gap-10 md:grid-cols-2 ${
+                  isEven ? "items-center" : "items-start"
+                }`}>
+                <Image
+                  src={project.imageSrc}
+                  alt={project.imageAlt}
+                  className={`h-auto w-full rounded-2xl shadow-[0_0_0_1px_rgba(255,255,255,0.15)] ${
+                    isEven ? "order-1 md:order-2" : ""
+                  }`}
+                  width={600}
+                  height={400}
+                />
 
-          <div className="grid items-start gap-10 md:grid-cols-2">
-            <Image
-              src="/project-3.png"
-              alt="Mobile Shop preview"
-              className="h-auto w-full rounded-2xl shadow-[0_0_0_1px_rgba(255,255,255,0.15)]"
-              width={600}
-              height={400}
-            />
-            <div>
-              <div className="text-3xl font-extrabold">03</div>
-              <h4 className="mt-2 text-xl font-bold">
-                Mobile Shop (E-commerce)
-              </h4>
-              <p className="mt-3 max-w-xl text-sm leading-6 text-white/70">
-                A clean and minimal e-commerce web app for mobile devices.
-                Includes product listing, filtering, cart management, and
-                responsive layout. Designed for fast browsing experience and
-                optimized for conversions. Built with Next js and TailwindCSS
-                following best UI practices.
-              </p>
-              <a
-                href="https://mobile-shop-rust.vercel.app/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-4 inline-flex items-center gap-2 text-sm text-white/80"
-              >
-                Visit project
-                <svg viewBox="0 0 24 24" className="h-4 w-4" fill="none">
-                  <path
-                    d="M7 17L17 7M9 7h8v8"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                  />
-                </svg>
-              </a>
-            </div>
-          </div>
-
-          <div className="grid items-center gap-10 md:grid-cols-2">
-            <div className="order-2 md:order-1">
-              <div className="text-3xl font-extrabold">04</div>
-              <h4 className="mt-2 text-xl font-bold">AI Chat Interface</h4>
-              <p className="mt-3 max-w-xl text-sm leading-6 text-white/70">
-                A clean, responsive ChatGPT-style UI with streaming responses,
-                Markdown rendering (code blocks, lists), and message
-                persistence. Supports keyboard shortcuts, system prompts. Built
-                with Next, TypeScript, and TailwindCSS focusing on accessibility
-                and smooth UX.
-              </p>
-              <a
-                href="https://chat-openai-one.vercel.app/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-4 inline-flex items-center gap-2 text-sm text-white/80"
-              >
-                Visit project
-                <svg viewBox="0 0 24 24" className="h-4 w-4" fill="none">
-                  <path
-                    d="M7 17L17 7M9 7h8v8"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                  />
-                </svg>
-              </a>
-            </div>
-
-            <Image
-              src="/project-4.png"
-              alt="AI Chat Interface preview"
-              className="order-1 h-auto w-full rounded-2xl shadow-[0_0_0_1px_rgba(255,255,255,0.15)] md:order-2"
-              width={600}
-              height={400}
-            />
-          </div>
+                <div className={isEven ? "order-2 md:order-1" : ""}>
+                  <div className="text-3xl font-extrabold">{numberLabel}</div>
+                  <h4 className="mt-2 text-xl font-bold">{project.title}</h4>
+                  <p className="mt-3 max-w-xl text-sm leading-6 text-white/70">
+                    {project.description}
+                  </p>
+                  <a
+                    href={project.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-4 inline-flex items-center gap-2 text-sm text-white/80">
+                    Visit project
+                    <svg viewBox="0 0 24 24" className="h-4 w-4" fill="none">
+                      <path
+                        d="M7 17L17 7M9 7h8v8"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            );
+          })}
         </div>
       </div>
     </section>
