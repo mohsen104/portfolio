@@ -87,20 +87,65 @@ export default function Experience() {
             <div className="my-3 h-px w-full bg-white/20" />
 
             <div className="space-y-2">
-              <div className="font-semibold">Real Estate Management Panel</div>
+              <div className="font-semibold">
+                Vehicle Management Dashboard (Team Member)
+              </div>
               <ul className="list-disc space-y-1 pl-5 text-neutral-200">
                 <li>
-                  Developed a responsive real estate management platform using
-                  React.js and Next.js.
+                  Collaborated in a flat-structured team to build a nationwide
+                  vehicle management dashboard using React.js, TypeScript,
+                  Tailwind, and Ant Design
                 </li>
                 <li>
-                  Optimized application performance through Code Splitting, Lazy
-                  Loading, and Tree Shaking.
+                  Optimized build pipeline with Vite and React 19, improving
+                  Lighthouse scores from 50 to 95 and reducing bundle size by
+                  ~80%
                 </li>
-                <li>Implemented PWA for offline access and improved UX</li>
                 <li>
-                  Provided guidance to the backend team (Node.js, MongoDB) while
-                  building reusable, modular frontend components.
+                  Engineered a high-performance GIS system with MapLibre,
+                  rendering 5,000+ real-time data points with under 100ms
+                  latency
+                </li>
+                <li>
+                  Integrated real-time communication via WebSocket and SignalR
+                  for live vehicle tracking
+                </li>
+                <li>
+                  Established a type-safe API layer using generic APIResponse
+                  types, significantly reducing runtime type errors
+                </li>
+                <li>
+                  Shipped a secure Authentication & Authorization system
+                  supporting 1,000+ users across 3 roles
+                </li>
+                <li>
+                  Dockerized the frontend and configured Husky, Commitlint,
+                  Semantic Release, and MSW to streamline the release pipeline
+                </li>
+              </ul>
+              <div className="font-semibold">IOT Platform (Tech Lead)</div>
+              <ul className="list-disc space-y-1 pl-5 text-neutral-200">
+                <li>
+                  Led a 3-person frontend team as Tech Lead, owning architecture
+                  decisions and technical direction over 4 months
+                </li>
+                <li>
+                  Architected a Monorepo with Turborepo, reducing cross-package
+                  build time by ~80%
+                </li>
+                <li>Crafted UI with React, Vite, and Material UI (MUI)</li>
+                <li>
+                  Wrote 50+ integration tests using Playwright and MSW,
+                  validating API contracts and critical user flows across key
+                  application modules
+                </li>
+                <li>
+                  Documented and maintained a component library in Storybook
+                  with 20+ components
+                </li>
+                <li>
+                  Configured CI/CD pipelines via GitLab, reducing deployment
+                  time from 20 min to 4 min
                 </li>
               </ul>
             </div>
@@ -125,24 +170,24 @@ export default function Experience() {
               <div className="font-semibold">
                 Enterprise Platform (Task Management, CRM, ERP)
               </div>
+              Developed and Completed 4+ projects using Tailwind and JavaScript,
+              including:
               <ul className="list-disc space-y-1 pl-5 text-neutral-200">
                 <li>
-                  Implemented Task Manager and CRM modules for a large-scale ERP
-                  services project.
+                  Launched Task Manager and CRM modules for a large-scale ERP
+                  platform serving 2,000+ users across multiple teams
                 </li>
                 <li>
-                  Developed a website for delivering IoT services and products.
+                  Built a responsive website for IoT services and products with
+                  a structured product catalog
                 </li>
                 <li>
-                  Built an international service website for a UAE-based airline
-                  agency.
+                  Delivered an international service website for a UAE-based
+                  aviation agency
                 </li>
                 <li>
-                  Collaborated with UI/UX and backend teams for API integration
-                  and sprint planning
-                </li>
-                <li>
-                  Contributed to SQL query writing and data optimization tasks
+                  Collaborated with UI/UX and backend teams on API integration
+                  and agile sprint planning
                 </li>
               </ul>
             </div>

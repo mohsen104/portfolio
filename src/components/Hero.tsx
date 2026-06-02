@@ -19,20 +19,20 @@ export default function Hero() {
           </p>
 
           <p className="mt-5 max-w-xl text-xs leading-5 text-neutral-600">
-            I’m Mohsen Karimvand with over 5 years of experience in web
-            development, specializing in React.js, Next.js, Tailwind, and
-            TypeScript. He focuses on designing modern user interfaces,
-            optimizing performance, and building scalable web applications.
-            Mohsen has strong expertise in applying best practices to enhance
-            SEO, loading speed, and overall user experience.
+            I’m Mohsen Karimvand Front-end Developer with 2.5+ years of
+            experience building scalable, production-grade applications using
+            React.js, TypeScript, and Next.js. Experienced leading
+            cross-functional teams in agile environments. Continuously expanding
+            technical expertise proficient in Node.js and Golang through
+            hands-on project work, with a strong commitment to learning emerging
+            technologies and adapting to diverse tech stacks.
           </p>
 
           <div className="mt-6 flex items-center gap-3">
             <a
               href="https://github.com/mohsen104"
               target="_blank"
-              rel="noopener"
-            >
+              rel="noopener">
               <IconButton ariaLabel="GitHub">
                 <GitHub />
               </IconButton>
@@ -40,8 +40,7 @@ export default function Hero() {
             <a
               href="https://www.linkedin.com/in/mohsenkarimvand"
               target="_blank"
-              rel="noopener"
-            >
+              rel="noopener">
               <IconButton ariaLabel="Linkedin">
                 <Linkedin />
               </IconButton>
@@ -49,8 +48,7 @@ export default function Hero() {
             <a
               href="mailto:m.karimvand.84@gmail.com"
               target="_blank"
-              rel="noopener"
-            >
+              rel="noopener">
               <IconButton ariaLabel="Mail">
                 <Mail />
               </IconButton>
