@@ -21,75 +21,7 @@ export default function Experience() {
             <div className="my-3 h-px w-full bg-white/20" />
 
             <div className="space-y-2">
-              <div className="font-semibold">
-                National Vehicle &amp; License Plate Management System
-              </div>
-              <ul className="list-disc space-y-1 pl-5 text-neutral-200">
-                <li>
-                  Built a nationwide vehicle management dashboard using
-                  React.js, TailwindCSS, Ant Design, and TypeScript.
-                </li>
-                <li>
-                  Optimized performance, accessibility, and code quality,
-                  improving overall scores from 50 to 95.
-                </li>
-                <li>
-                  Developed a high-performance GIS system with Maplibre, capable
-                  of handling thousands of real-time data points.
-                </li>
-                <li>
-                  Integrated real-time communication using WebSocket and
-                  SignalR.
-                </li>
-                <li>Implemented a type-safe API layer.</li>
-                <li>
-                  Dockerized the entire frontend for scalable and efficient
-                  deployment.
-                </li>
-                <li>
-                  Built an admin-side icon selector system similar to React
-                  Icons for panel icon management.
-                </li>
-                <li>
-                  Implemented a real-time connection log terminal to monitor
-                  connection and disconnection events.
-                </li>
-                <li>
-                  Developed a fully secure authentication & authorization
-                  system.
-                </li>
-                <li>
-                  Configured enterprise-level ESLint and Husky setup for
-                  commit-time formatting and linting.
-                </li>
-                <li>Created backend API response mocks using MSW.</li>
-                <li>
-                  Implemented professional configurations for Vite and React 19,
-                  resulting in 80% reduction in bundle size.
-                </li>
-              </ul>
-            </div>
-          </article>
-
-          <article className="rounded-xl border-2 border-white/15 bg-white/5 p-5">
-            <div className="flex flex-wrap gap-1 items-start justify-between">
-              <div>
-                <h4 className="text-lg font-extrabold">Dubz</h4>
-                <div className="mt-0.5 text-sm text-neutral-300">
-                  Front-end Developer
-                </div>
-              </div>
-              <div className="text-sm text-neutral-300">
-                Jul 2024 - Apr 2025
-              </div>
-            </div>
-
-            <div className="my-3 h-px w-full bg-white/20" />
-
-            <div className="space-y-2">
-              <div className="font-semibold">
-                Vehicle Management Dashboard (Team Member)
-              </div>
+              <div className="font-semibold">Vehicle Management Dashboard</div>
               <ul className="list-disc space-y-1 pl-5 text-neutral-200">
                 <li>
                   Collaborated in a flat-structured team to build a nationwide
@@ -123,12 +55,13 @@ export default function Experience() {
                   Semantic Release, and MSW to streamline the release pipeline
                 </li>
               </ul>
-              <div className="font-semibold">IOT Platform (Tech Lead)</div>
+            </div>
+
+            <div className="my-3 h-px w-full" />
+
+            <div className="space-y-2">
+              <div className="font-semibold">IOT Platform</div>
               <ul className="list-disc space-y-1 pl-5 text-neutral-200">
-                <li>
-                  Led a 3-person frontend team as Tech Lead, owning architecture
-                  decisions and technical direction over 4 months
-                </li>
                 <li>
                   Architected a Monorepo with Turborepo, reducing cross-package
                   build time by ~80%
@@ -154,6 +87,50 @@ export default function Experience() {
           <article className="rounded-xl border-2 border-white/15 bg-white/5 p-5">
             <div className="flex flex-wrap gap-1 items-start justify-between">
               <div>
+                <h4 className="text-lg font-extrabold">Dubz</h4>
+                <div className="mt-0.5 text-sm text-neutral-300">
+                  Front-end Developer
+                </div>
+              </div>
+              <div className="text-sm text-neutral-300">
+                Jul 2024 - Apr 2025
+              </div>
+            </div>
+
+            <div className="my-3 h-px w-full bg-white/20" />
+
+            <div className="space-y-2">
+              <div className="font-semibold">
+                Architected a responsive real estate management platform using
+                React.js ,Next.js and Tailwind with performance-focused
+                architecture
+              </div>
+              <ul className="list-disc space-y-1 pl-5 text-neutral-200">
+                <li>
+                  Reduced initial bundle size by ~70% via Code Splitting, Lazy
+                  Loading, and Tree Shaking
+                </li>
+                <li>
+                  Constructed PWA support, improving offline accessibility and
+                  overall user engagement
+                </li>
+                <li>
+                  Maintained code quality across 40+ components using ESLint and
+                  Prettier, achieving near-zero lint errors
+                </li>
+                <li>
+                  Integrated a multi-step property listing form with React Hook
+                  Form and Zod schema validation, featuring a custom pure-HTML
+                  file uploader and drag-and-drop image reordering — delivering
+                  robust UX with full client-side validation
+                </li>
+              </ul>
+            </div>
+          </article>
+
+          <article className="rounded-xl border-2 border-white/15 bg-white/5 p-5">
+            <div className="flex flex-wrap gap-1 items-start justify-between">
+              <div>
                 <h4 className="text-lg font-extrabold">Manzoomeh Negaran</h4>
                 <div className="mt-0.5 text-sm text-neutral-300">
                   Front-end Developer
@@ -168,10 +145,9 @@ export default function Experience() {
 
             <div className="space-y-2">
               <div className="font-semibold">
-                Enterprise Platform (Task Management, CRM, ERP)
+                Developed and Completed 4+ projects using Tailwind and
+                JavaScript, including:
               </div>
-              Developed and Completed 4+ projects using Tailwind and JavaScript,
-              including:
               <ul className="list-disc space-y-1 pl-5 text-neutral-200">
                 <li>
                   Launched Task Manager and CRM modules for a large-scale ERP

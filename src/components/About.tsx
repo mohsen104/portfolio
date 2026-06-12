@@ -2,8 +2,7 @@ export default function About() {
   return (
     <section
       id="about"
-      className="mx-auto max-w-6xl grid-cols-1 md:grid-cols-2 gap-8 px-4 py-16 grid md:px-6"
-    >
+      className="mx-auto max-w-6xl grid-cols-1 md:grid-cols-2 gap-8 px-4 py-16 grid md:px-6">
       <div className="w-full flex items-center justify-center">
         <div className="rounded-xl bg-white w-1/2">
           <AvatarIllustration />
@@ -15,22 +14,28 @@ export default function About() {
           About <span className="font-black">Me</span>
         </h3>
         <p className="text-xs leading-6 text-neutral-700">
-          I’m a frontend-focused full-stack developer who loves building
-          scalable, performant, and beautifully designed web applications. My
-          main stack revolves around React.js, Next.js, and Node.js — where I
-          bring clean code and elegant user experiences together.
+          I'm a Frontend Developer with over 5 years of programming experience
+          and more than 2.5 years of professional experience building modern web
+          applications. My expertise lies in React.js, Next.js, TypeScript, and
+          Tailwind CSS, where I focus on creating scalable, maintainable, and
+          high-performance user interfaces that deliver excellent user
+          experiences.
         </p>
         <p className="mt-4 text-xs leading-6 text-neutral-700">
-          I started my coding journey with Java and Android development before
-          moving into the web world. Over the past few years, I’ve built
-          products for startups, e-commerce platforms, and internal dashboards,
-          focusing on maintainability, reusability, and best practices across
-          the stack.
+          Throughout my career, I have contributed to a variety of projects,
+          including enterprise dashboards, GIS systems, real estate platforms,
+          ERP solutions, and IoT applications. Working across different
+          industries has helped me develop a strong understanding of software
+          architecture, performance optimization, reusable component design, and
+          collaborative development workflows.
         </p>
         <p className="mt-4 text-xs leading-6 text-neutral-700">
-          When I’m not writing code, I enjoy exploring new frontend tools,
-          improving my TypeScript skills, and sharing insights about clean
-          architecture and design patterns on LinkedIn and GitHub.
+          Beyond frontend development, I also have experience with backend
+          technologies such as Node.js and Golang, which enables me to better
+          understand full-stack architectures and communicate effectively with
+          backend teams. I am passionate about continuous learning, modern
+          engineering practices, testing, CI/CD, and building products that are
+          both technically robust and user-focused.
         </p>
       </div>
     </section>

@@ -19,13 +19,15 @@ export default function Hero() {
           </p>
 
           <p className="mt-5 max-w-xl text-xs leading-5 text-neutral-600">
-            I’m Mohsen Karimvand Front-end Developer with 2.5+ years of
-            experience building scalable, production-grade applications using
-            React.js, TypeScript, and Next.js. Experienced leading
-            cross-functional teams in agile environments. Continuously expanding
-            technical expertise proficient in Node.js and Golang through
-            hands-on project work, with a strong commitment to learning emerging
-            technologies and adapting to diverse tech stacks.
+            I’m Mohsen Karimvand Front-end Developer with 5+ years of
+            programming experience and 2.5+ years in professional environments,
+            crafting performant, scalable applications with React.js,
+            TypeScript, and Next.js. Beyond front-end, I’ve built real back-end
+            experience working with Node.js and Golang, covering RESTful APIs
+            and server-side logic, which gives me a genuine full-stack
+            perspective. I bring solid software engineering principles, a
+            continuous learning mindset, and a genuine passion for staying
+            current with modern technologies and best practices.
           </p>
 
           <div className="mt-6 flex items-center gap-3">

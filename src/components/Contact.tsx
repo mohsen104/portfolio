@@ -4,8 +4,7 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="mx-auto grid max-w-6xl gap-16 px-6 py-20 md:grid-cols-2"
-    >
+      className="mx-auto grid max-w-6xl gap-16 px-6 py-20 md:grid-cols-2">
       <form className="space-y-5">
         <input
           placeholder="Your name"
@@ -28,8 +27,7 @@ export default function Contact() {
         <div className="flex items-center gap-6">
           <button
             type="submit"
-            className="h-11 rounded-lg bg-black px-6 font-extrabold text-xs sm:text-base text-white"
-          >
+            className="h-11 rounded-lg bg-black px-6 font-extrabold text-xs sm:text-base text-white">
             Get In Touch
           </button>
 
@@ -37,12 +35,10 @@ export default function Contact() {
             <a
               href="https://github.com/mohsen104"
               target="_blank"
-              rel="noopener"
-            >
+              rel="noopener">
               <button
                 aria-label="Github"
-                className="inline-flex cursor-pointer size-10 items-center justify-center rounded-md border-2 border-black bg-white transition -translate-y-0.5 shadow-[3px_3px_0_#000] hover:translate-0 hover:shadow-none"
-              >
+                className="inline-flex cursor-pointer size-10 items-center justify-center rounded-md border-2 border-black bg-white transition -translate-y-0.5 shadow-[3px_3px_0_#000] hover:translate-0 hover:shadow-none">
                 <span className="[&>svg]:h-5 [&>svg]:w-5">
                   <GitHub />
                 </span>
@@ -52,13 +48,11 @@ export default function Contact() {
             <a
               href="https://www.linkedin.com/in/mohsenkarimvand"
               target="_blank"
-              rel="noopener"
-            >
+              rel="noopener">
               <button
                 type="button"
                 aria-label="Linkedin"
-                className="inline-flex cursor-pointer size-10 items-center justify-center rounded-md border-2 border-black bg-white transition -translate-y-0.5 shadow-[3px_3px_0_#000] hover:translate-0 hover:shadow-none"
-              >
+                className="inline-flex cursor-pointer size-10 items-center justify-center rounded-md border-2 border-black bg-white transition -translate-y-0.5 shadow-[3px_3px_0_#000] hover:translate-0 hover:shadow-none">
                 <span className="[&>svg]:h-5 [&>svg]:w-5">
                   <Linkedin />
                 </span>
@@ -66,15 +60,13 @@ export default function Contact() {
             </a>
 
             <a
-              href="https://www.linkedin.com/in/mohsenkarimvand"
+              href="mailto:m.karimvand.84@gmail.com"
               target="_blank"
-              rel="noopener"
-            >
+              rel="noopener">
               <button
                 type="button"
                 aria-label="Mail"
-                className="inline-flex cursor-pointer size-10 items-center justify-center rounded-md border-2 border-black bg-white transition -translate-y-0.5 shadow-[3px_3px_0_#000] hover:translate-0 hover:shadow-none"
-              >
+                className="inline-flex cursor-pointer size-10 items-center justify-center rounded-md border-2 border-black bg-white transition -translate-y-0.5 shadow-[3px_3px_0_#000] hover:translate-0 hover:shadow-none">
                 <span className="[&>svg]:h-5 [&>svg]:w-5">
                   <Mail />
                 </span>
