@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import { CustomCursor } from "@/components/Shared/CustomCursor";
+import { Analytics } from "@vercel/analytics/next";
 
 const jetBrainsMono = JetBrains_Mono({
   subsets: ["latin"],
@@ -24,6 +25,7 @@ export default function RootLayout({
       <body className={`${jetBrainsMono.variable} antialiased`}>
         {children}
         <CustomCursor />
+        <Analytics />
       </body>
     </html>
   );
