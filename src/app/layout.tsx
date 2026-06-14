@@ -11,8 +11,9 @@ const jetBrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Portfolio",
-  description: "portfolio mohsen karimvand",
+  title: "Mohsen Karimvand | محسن کریم وند",
+  description: "Portfolio Mohsen Karimvand",
+  keywords: ["Mohsen Karimvand", "محسن کریم وند"],
 };
 
 export default function RootLayout({
