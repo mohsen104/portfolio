@@ -1,3 +1,5 @@
+"use client";
+import { motion } from "motion/react";
 import { GitHub, Linkedin, Mail } from "./Shared/Icons";
 
 export default function Contact() {
@@ -5,7 +7,13 @@ export default function Contact() {
     <section
       id="contact"
       className="mx-auto grid max-w-6xl gap-16 px-6 py-20 md:grid-cols-2">
-      <form className="space-y-5">
+      {/* Form Column */}
+      <motion.form
+        className="space-y-5"
+        initial={{ opacity: 0, x: -40 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.6, ease: "easeOut" }}>
         <input
           placeholder="Your name"
           className="h-14 w-full rounded-lg border-2 border-black px-5 outline-none placeholder:text-neutral-500"
@@ -32,72 +40,86 @@ export default function Contact() {
           </button>
 
           <div className="flex items-center gap-5">
-            <a
-              href="https://github.com/mohsen104"
-              target="_blank"
-              rel="noopener">
-              <button
-                aria-label="Github"
-                className="inline-flex cursor-pointer size-10 items-center justify-center rounded-md border-2 border-black bg-white transition -translate-y-0.5 shadow-[3px_3px_0_#000] hover:translate-0 hover:shadow-none">
-                <span className="[&>svg]:h-5 [&>svg]:w-5">
-                  <GitHub />
-                </span>
-              </button>
-            </a>
-
-            <a
-              href="https://www.linkedin.com/in/mohsenkarimvand"
-              target="_blank"
-              rel="noopener">
-              <button
-                type="button"
-                aria-label="Linkedin"
-                className="inline-flex cursor-pointer size-10 items-center justify-center rounded-md border-2 border-black bg-white transition -translate-y-0.5 shadow-[3px_3px_0_#000] hover:translate-0 hover:shadow-none">
-                <span className="[&>svg]:h-5 [&>svg]:w-5">
-                  <Linkedin />
-                </span>
-              </button>
-            </a>
-
-            <a
-              href="mailto:m.karimvand.84@gmail.com"
-              target="_blank"
-              rel="noopener">
-              <button
-                type="button"
-                aria-label="Mail"
-                className="inline-flex cursor-pointer size-10 items-center justify-center rounded-md border-2 border-black bg-white transition -translate-y-0.5 shadow-[3px_3px_0_#000] hover:translate-0 hover:shadow-none">
-                <span className="[&>svg]:h-5 [&>svg]:w-5">
-                  <Mail />
-                </span>
-              </button>
-            </a>
+            {[
+              {
+                href: "https://github.com/mohsen104",
+                label: "Github",
+                icon: <GitHub />,
+              },
+              {
+                href: "https://www.linkedin.com/in/mohsenkarimvand",
+                label: "Linkedin",
+                icon: <Linkedin />,
+              },
+              {
+                href: "mailto:m.karimvand.84@gmail.com",
+                label: "Mail",
+                icon: <Mail />,
+              },
+            ].map(({ href, label, icon }, i) => (
+              <motion.a
+                key={label}
+                href={href}
+                target="_blank"
+                rel="noopener"
+                initial={{ opacity: 0, y: 16 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{
+                  duration: 0.4,
+                  ease: "easeOut",
+                  delay: 0.4 + i * 0.1,
+                }}>
+                <button
+                  type="button"
+                  aria-label={label}
+                  className="inline-flex cursor-pointer size-10 items-center justify-center rounded-md border-2 border-black bg-white transition -translate-y-0.5 shadow-[3px_3px_0_#000] hover:translate-0 hover:shadow-none">
+                  <span className="[&>svg]:h-5 [&>svg]:w-5">{icon}</span>
+                </button>
+              </motion.a>
+            ))}
           </div>
         </div>
-      </form>
+      </motion.form>
 
-      <div className="pt-2">
+      {/* Text Column */}
+      <motion.div
+        className="pt-2"
+        initial={{ opacity: 0, x: 40 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.6, ease: "easeOut", delay: 0.15 }}>
         <h3 className="text-4xl font-black leading-tight md:text-5xl">
-          Let’s{" "}
+          Let's{" "}
           <span className="relative -mx-1 inline-block rounded px-1">
             <span className="relative z-10">talk</span>
-            <span className="absolute inset-0 -z-0 rounded bg-white ring-2 ring-black shadow-[6px_6px_0_#000]" />
+            <span className="absolute inset-0 z-0 rounded bg-white ring-2 ring-black shadow-[6px_6px_0_#000]" />
           </span>{" "}
           for
           <br />
           <span className="mt-2 inline-block">Something special</span>
         </h3>
 
-        <p className="mt-5 max-w-xl leading-7 text-neutral-500">
+        <motion.p
+          className="mt-5 max-w-xl leading-7 text-neutral-500"
+          initial={{ opacity: 0, y: 16 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, ease: "easeOut", delay: 0.3 }}>
           I seek to push the limits of creativity to create high-engaging,
           user-friendly, and memorable interactive experiences.
-        </p>
+        </motion.p>
 
-        <div className="mt-8 space-y-2 text-xl font-extrabold">
+        <motion.div
+          className="mt-8 space-y-2 text-xl font-extrabold"
+          initial={{ opacity: 0, y: 16 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, ease: "easeOut", delay: 0.45 }}>
           <div>m.karimvand.84@gmail.com</div>
           <div>09196404757</div>
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
     </section>
   );
 }

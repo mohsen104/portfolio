@@ -9,7 +9,7 @@ import Skills from "@/components/Skills";
 
 export default function Page() {
   return (
-    <main className="bg-white text-black antialiased">
+    <>
       <Header />
       <Hero />
       <Skills />
@@ -18,6 +18,6 @@ export default function Page() {
       <Projects />
       <Contact />
       <Footer />
-    </main>
+    </>
   );
 }

@@ -1,3 +1,5 @@
+"use client";
+import { motion } from "motion/react";
 import { IconButton } from "./Shared/IconButton";
 import { GitHub, Linkedin, Mail } from "./Shared/Icons";
 
@@ -5,8 +7,11 @@ export default function Hero() {
   return (
     <section className="mx-auto max-w-6xl px-4 pb-16 pt-12 md:pb-24 md:pt-16">
       <div className="grid items-center gap-10 md:grid-cols-2">
-        <div>
-          <p className="text-lg">Hello I’am</p>
+        <motion.div
+          initial={{ opacity: 0, x: -40 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.6, ease: "easeOut" }}>
+          <p className="text-lg">Hello I'am</p>
           <h1 className="mt-1 text-3xl font-black tracking-tight md:text-4xl">
             Mohsen Karimvand
           </h1>
@@ -19,10 +24,10 @@ export default function Hero() {
           </p>
 
           <p className="mt-5 max-w-xl text-xs leading-5 text-neutral-600">
-            I’m Mohsen Karimvand Front-end Developer with 5+ years of
+            I'm Mohsen Karimvand Front-end Developer with 5+ years of
             programming experience and 2.5+ years in professional environments,
             crafting performant, scalable applications with React.js,
-            TypeScript, and Next.js. Beyond front-end, I’ve built real back-end
+            TypeScript, and Next.js. Beyond front-end, I've built real back-end
             experience working with Node.js and Golang, covering RESTful APIs
             and server-side logic, which gives me a genuine full-stack
             perspective. I bring solid software engineering principles, a
@@ -30,7 +35,11 @@ export default function Hero() {
             current with modern technologies and best practices.
           </p>
 
-          <div className="mt-6 flex items-center gap-3">
+          <motion.div
+            className="mt-6 flex items-center gap-3"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.4, ease: "easeOut" }}>
             <a
               href="https://github.com/mohsen104"
               target="_blank"
@@ -55,12 +64,16 @@ export default function Hero() {
                 <Mail />
               </IconButton>
             </a>
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
 
-        <div className="relative mx-auto w-full max-w-md">
+        <motion.div
+          className="relative mx-auto w-full max-w-md"
+          initial={{ opacity: 0, x: 40 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}>
           <HeroIllustration />
-        </div>
+        </motion.div>
       </div>
     </section>
   );

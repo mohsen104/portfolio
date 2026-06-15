@@ -1,3 +1,5 @@
+"use client";
+import { motion } from "motion/react";
 import Image from "next/image";
 
 const projects = [
@@ -47,9 +49,15 @@ export default function Projects() {
   return (
     <section id="projects" className="bg-black py-20 text-white">
       <div className="mx-auto max-w-6xl px-6">
-        <h3 className="mb-12 text-center text-2xl font-bold md:text-3xl">
+        <motion.h3
+          className="mb-12 text-center text-2xl font-bold md:text-3xl"
+          initial={{ opacity: 0, y: -16 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, ease: "easeOut" }}
+        >
           My <span className="font-extrabold">Projects</span>
-        </h3>
+        </motion.h3>
 
         <div className="grid gap-20">
           {projects.map((project, index) => {
@@ -61,18 +69,31 @@ export default function Projects() {
                 key={project.title}
                 className={`grid gap-10 md:grid-cols-2 ${
                   isEven ? "items-center" : "items-start"
-                }`}>
-                <Image
-                  src={project.imageSrc}
-                  alt={project.imageAlt}
-                  className={`h-auto w-full rounded-2xl shadow-[0_0_0_1px_rgba(255,255,255,0.15)] ${
-                    isEven ? "order-1 md:order-2" : ""
-                  }`}
-                  width={600}
-                  height={400}
-                />
+                }`}
+              >
+                <motion.div
+                  className={isEven ? "order-1 md:order-2" : ""}
+                  initial={{ opacity: 0, x: isEven ? 40 : -40 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.6, ease: "easeOut", delay: index * 0.05 }}
+                >
+                  <Image
+                    src={project.imageSrc}
+                    alt={project.imageAlt}
+                    className="h-auto w-full rounded-2xl shadow-[0_0_0_1px_rgba(255,255,255,0.15)]"
+                    width={600}
+                    height={400}
+                  />
+                </motion.div>
 
-                <div className={isEven ? "order-2 md:order-1" : ""}>
+                <motion.div
+                  className={isEven ? "order-2 md:order-1" : ""}
+                  initial={{ opacity: 0, x: isEven ? -40 : 40 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.6, ease: "easeOut", delay: index * 0.05 + 0.15 }}
+                >
                   <div className="text-3xl font-extrabold">{numberLabel}</div>
                   <h4 className="mt-2 text-xl font-bold">{project.title}</h4>
                   <p className="mt-3 max-w-xl text-sm leading-6 text-white/70">
@@ -82,7 +103,8 @@ export default function Projects() {
                     href={project.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="mt-4 inline-flex items-center gap-2 text-sm text-white/80">
+                    className="mt-4 inline-flex items-center gap-2 text-sm text-white/80"
+                  >
                     Visit project
                     <svg viewBox="0 0 24 24" className="h-4 w-4" fill="none">
                       <path
@@ -92,7 +114,7 @@ export default function Projects() {
                       />
                     </svg>
                   </a>
-                </div>
+                </motion.div>
               </div>
             );
           })}

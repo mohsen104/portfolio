@@ -1,43 +1,56 @@
+"use client";
+import { motion } from "motion/react";
+
 export default function About() {
   return (
     <section
       id="about"
       className="mx-auto max-w-6xl grid-cols-1 md:grid-cols-2 gap-8 px-4 py-16 grid md:px-6">
-      <div className="w-full flex items-center justify-center">
+      <motion.div
+        className="w-full flex items-center justify-center"
+        initial={{ opacity: 0, x: -40 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.6, ease: "easeOut" }}>
         <div className="rounded-xl bg-white w-1/2">
           <AvatarIllustration />
         </div>
-      </div>
+      </motion.div>
 
-      <div>
-        <h3 className="mb-4 text-2xl font-extrabold">
+      <motion.div
+        initial={{ opacity: 0, x: 40 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.6, ease: "easeOut", delay: 0.15 }}>
+        <motion.h3
+          className="mb-4 text-2xl font-extrabold"
+          initial={{ opacity: 0, y: -16 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, ease: "easeOut", delay: 0.25 }}>
           About <span className="font-black">Me</span>
-        </h3>
-        <p className="text-xs leading-6 text-neutral-700">
-          I'm a Frontend Developer with over 5 years of programming experience
-          and more than 2.5 years of professional experience building modern web
-          applications. My expertise lies in React.js, Next.js, TypeScript, and
-          Tailwind CSS, where I focus on creating scalable, maintainable, and
-          high-performance user interfaces that deliver excellent user
-          experiences.
-        </p>
-        <p className="mt-4 text-xs leading-6 text-neutral-700">
-          Throughout my career, I have contributed to a variety of projects,
-          including enterprise dashboards, GIS systems, real estate platforms,
-          ERP solutions, and IoT applications. Working across different
-          industries has helped me develop a strong understanding of software
-          architecture, performance optimization, reusable component design, and
-          collaborative development workflows.
-        </p>
-        <p className="mt-4 text-xs leading-6 text-neutral-700">
-          Beyond frontend development, I also have experience with backend
-          technologies such as Node.js and Golang, which enables me to better
-          understand full-stack architectures and communicate effectively with
-          backend teams. I am passionate about continuous learning, modern
-          engineering practices, testing, CI/CD, and building products that are
-          both technically robust and user-focused.
-        </p>
-      </div>
+        </motion.h3>
+
+        {[
+          `I'm a Frontend Developer with over 5 years of programming experience and more than 2.5 years of professional experience building modern web applications. My expertise lies in React.js, Next.js, TypeScript, and Tailwind CSS, where I focus on creating scalable, maintainable, and high-performance user interfaces that deliver excellent user experiences.`,
+          `Throughout my career, I have contributed to a variety of projects, including enterprise dashboards, GIS systems, real estate platforms, ERP solutions, and IoT applications. Working across different industries has helped me develop a strong understanding of software architecture, performance optimization, reusable component design, and collaborative development workflows.`,
+          `Beyond frontend development, I also have experience with backend technologies such as Node.js and Golang, which enables me to better understand full-stack architectures and communicate effectively with backend teams. I am passionate about continuous learning, modern engineering practices, testing, CI/CD, and building products that are both technically robust and user-focused.`,
+        ].map((text, i) => (
+          <motion.p
+            key={i}
+            className="mt-4 text-xs leading-6 text-neutral-700 first:mt-0"
+            initial={{ opacity: 0, y: 16 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{
+              duration: 0.5,
+              ease: "easeOut",
+              delay: 0.3 + i * 0.1,
+            }}>
+            {text}
+          </motion.p>
+        ))}
+      </motion.div>
     </section>
   );
 }

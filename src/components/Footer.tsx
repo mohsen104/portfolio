@@ -1,11 +1,20 @@
+"use client";
+import { motion } from "motion/react";
+
 export default function Footer() {
   return (
-    <footer className="border-t-2 border-neutral-200 py-6">
+    <motion.footer
+      className="border-t-2 border-neutral-200 py-6"
+      initial={{ opacity: 0, y: 16 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.5, ease: "easeOut" }}
+    >
       <div className="mx-auto max-w-6xl px-4 text-sm text-neutral-600 md:px-6">
         <div className="text-right">
           <div>© 2018–2026 Portfolio</div>
         </div>
       </div>
-    </footer>
+    </motion.footer>
   );
 }

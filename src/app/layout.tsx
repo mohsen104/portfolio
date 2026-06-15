@@ -23,7 +23,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${jetBrainsMono.variable} antialiased`}>
+      <body
+        className={`${jetBrainsMono.variable} bg-white text-black overflow-x-hidden antialiased`}>
         {children}
         <CustomCursor />
         <Analytics />
