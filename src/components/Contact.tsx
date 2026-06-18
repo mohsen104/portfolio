@@ -1,6 +1,6 @@
 "use client";
 import { motion } from "motion/react";
-import { GitHub, Linkedin, Mail } from "./Shared/Icons";
+import { GitHub, Linkedin, Mail } from "./Shared1/Icons";
 
 export default function Contact() {
   return (

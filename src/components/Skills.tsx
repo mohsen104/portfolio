@@ -11,21 +11,19 @@ import {
   ReactIcon,
   TailwindIcon,
   TsIcon,
-} from "@/components/Shared/Icons";
+} from "@/components/Shared1/Icons";
 
 export default function Skills() {
   return (
     <section
       id="skills"
-      className="mx-auto max-w-6xl px-4 py-12 md:px-6 md:py-16"
-    >
+      className="mx-auto max-w-6xl px-4 py-12 md:px-6 md:py-16">
       <motion.h3
         className="mb-6 text-center text-2xl font-extrabold"
         initial={{ opacity: 0, y: -16 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        transition={{ duration: 0.5, ease: "easeOut" }}
-      >
+        transition={{ duration: 0.5, ease: "easeOut" }}>
         My <span className="font-black">Skills</span>
       </motion.h3>
 
@@ -48,8 +46,7 @@ export default function Skills() {
             initial={{ opacity: 0, y: 24 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.4, delay: i * 0.07, ease: "easeOut" }}
-          >
+            transition={{ duration: 0.4, delay: i * 0.07, ease: "easeOut" }}>
             <div className="mb-4 p-1 inline-flex h-10 w-10 items-center justify-center rounded-lg border-2 border-neutral-900 bg-white">
               {icon}
             </div>
