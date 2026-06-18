@@ -58,6 +58,7 @@ export const projects = [
       "/projects/project-6-2.png",
       "/projects/project-6-3.png",
       "/projects/project-6-4.png",
+      "/projects/project-6-5.png",
     ],
   },
 
@@ -84,6 +85,36 @@ export const projects = [
       "/projects/project-8-1.png",
       "/projects/project-8-2.png",
       "/projects/project-8-3.png",
+    ],
+  },
+
+  {
+    title: "Fleet Management System",
+    description:
+      "Comprehensive fleet management platform for buses, trucks, and trailers with real-time GPS tracking, route optimization, and full GIS integration. Includes vehicle monitoring, driver management, fuel tracking, and maintenance scheduling.",
+    images: [
+      "/projects/project-9-1.png",
+      "/projects/project-9-2.png",
+      "/projects/project-9-3.png",
+      "/projects/project-9-4.png",
+      "/projects/project-9-5.png",
+      "/projects/project-9-6.png",
+      "/projects/project-9-7.png",
+      "/projects/project-9-8.png",
+      "/projects/project-9-9.png",
+    ],
+  },
+
+  {
+    title: "IoT Platform",
+    description:
+      "Comprehensive IoT platform for device management, real-time data visualization, and rule-based automation. Features customizable dashboards, telemetry monitoring, device provisioning, and alert systems similar to ThingsBoard.",
+    images: [
+      "/projects/project-10-1.png",
+      "/projects/project-10-2.png",
+      "/projects/project-10-3.png",
+      "/projects/project-10-4.png",
+      "/projects/project-10-5.png",
     ],
   },
 ];

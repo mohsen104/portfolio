@@ -2,12 +2,18 @@
 
 import Image from "next/image";
 import { motion } from "motion/react";
-
 import { Swiper, SwiperSlide } from "swiper/react";
-import { EffectCards, Autoplay } from "swiper/modules";
+import {
+  EffectCoverflow,
+  Autoplay,
+  Pagination,
+  Navigation,
+} from "swiper/modules";
 
 import "swiper/css";
-import "swiper/css/effect-cards";
+import "swiper/css/effect-coverflow";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
 import { projects } from "@/data/projects";
 
 export default function Projects() {
@@ -31,65 +37,71 @@ export default function Projects() {
             return (
               <div
                 key={project.title}
-                className={`grid items-center gap-12 lg:grid-cols-2 ${
-                  reverse ? "" : ""
-                }`}>
-                {/* STACKED SLIDER */}
-
+                className="grid items-center gap-12 lg:grid-cols-2">
+                {/* Swiper Container */}
                 <motion.div
                   className={reverse ? "lg:order-2" : ""}
-                  initial={{
-                    opacity: 0,
-                    x: reverse ? 60 : -60,
-                  }}
-                  whileInView={{
-                    opacity: 1,
-                    x: 0,
-                  }}
+                  initial={{ opacity: 0, x: reverse ? 60 : -60 }}
+                  whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true }}
-                  transition={{
-                    duration: 0.7,
-                  }}>
+                  transition={{ duration: 0.7 }}>
                   <Swiper
-                    effect={"cards"}
+                    effect="coverflow"
                     grabCursor
-                    modules={[EffectCards, Autoplay]}
-                    autoplay={{
-                      delay: 2500,
-                      disableOnInteraction: false,
+                    centeredSlides
+                    slidesPerView="auto"
+                    coverflowEffect={{
+                      rotate: 50,
+                      stretch: 0,
+                      depth: 100,
+                      modifier: 1,
+                      slideShadows: true,
                     }}
-                    className="mx-auto h-65 w-[320px] md:h-105 md:w-155">
+                    autoplay={{
+                      delay: 3000,
+                      disableOnInteraction: false,
+                      pauseOnMouseEnter: true,
+                    }}
+                    pagination={{
+                      clickable: true,
+                      dynamicBullets: true,
+                    }}
+                    navigation
+                    loop
+                    modules={[
+                      EffectCoverflow,
+                      Autoplay,
+                      Pagination,
+                      Navigation,
+                    ]}
+                    className="w-full max-w-xs sm:max-w-xl md:max-w-2xl lg:max-w-3xl px-6 py-12">
                     {project.images.map((image, imageIndex) => (
                       <SwiperSlide
                         key={imageIndex}
-                        className="overflow-hidden rounded-3xl">
-                        <Image
-                          src={image}
-                          alt={project.title}
-                          fill
-                          className="object-cover"
-                        />
+                        className="w-[320px]! md:w-130!">
+                        <div className="relative aspect-video w-full overflow-hidden rounded-2xl shadow-2xl bg-zinc-900">
+                          <Image
+                            src={image}
+                            alt={`${project.title} - Image ${imageIndex + 1}`}
+                            fill
+                            className="object-contain"
+                            quality={100}
+                            priority={index === 0 && imageIndex === 0}
+                            sizes="(max-width: 640px) 95vw, (max-width: 768px) 90vw, (max-width: 1024px) 50vw, 520px"
+                          />
+                        </div>
                       </SwiperSlide>
                     ))}
                   </Swiper>
                 </motion.div>
 
-                {/* CONTENT */}
-
+                {/* Content */}
                 <motion.div
                   className={reverse ? "lg:order-1" : ""}
-                  initial={{
-                    opacity: 0,
-                    x: reverse ? -60 : 60,
-                  }}
-                  whileInView={{
-                    opacity: 1,
-                    x: 0,
-                  }}
+                  initial={{ opacity: 0, x: reverse ? -60 : 60 }}
+                  whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true }}
-                  transition={{
-                    duration: 0.7,
-                  }}>
+                  transition={{ duration: 0.7 }}>
                   <div className="text-6xl font-black text-white/10">
                     {String(index + 1).padStart(2, "0")}
                   </div>
