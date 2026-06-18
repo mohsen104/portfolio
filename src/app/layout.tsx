@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { JetBrains_Mono } from "next/font/google";
 import "./globals.css";
-import { CustomCursor } from "@/components/Shared1/CustomCursor";
+import { CustomCursor } from "@/components/shared/CustomCursor";
 import { Analytics } from "@vercel/analytics/next";
 
 const jetBrainsMono = JetBrains_Mono({

@@ -11,7 +11,7 @@ import {
   ReactIcon,
   TailwindIcon,
   TsIcon,
-} from "@/components/Shared1/Icons";
+} from "@/components/shared/Icons";
 
 export default function Skills() {
   return (

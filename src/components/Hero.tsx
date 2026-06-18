@@ -1,7 +1,7 @@
 "use client";
 import { motion } from "motion/react";
-import { IconButton } from "./Shared1/IconButton";
-import { GitHub, Linkedin, Mail } from "./Shared1/Icons";
+import { IconButton } from "./shared/IconButton";
+import { GitHub, Linkedin, Mail } from "./shared/Icons";
 
 export default function Hero() {
   return (

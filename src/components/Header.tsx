@@ -1,6 +1,6 @@
 "use client";
 import { motion } from "motion/react";
-import { ChevronDown } from "./Shared1/Icons";
+import { ChevronDown } from "./shared/Icons";
 
 export default function Header() {
   return (
