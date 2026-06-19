@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { motion } from "motion/react";
+import { motion, AnimatePresence } from "motion/react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import {
   EffectCoverflow,
@@ -9,6 +9,7 @@ import {
   Pagination,
   Navigation,
 } from "swiper/modules";
+import { useState } from "react";
 
 import "swiper/css";
 import "swiper/css/effect-coverflow";
@@ -17,6 +18,8 @@ import "swiper/css/navigation";
 import { projects } from "@/data/projects";
 
 export default function Projects() {
+  const [fullscreenImage, setFullscreenImage] = useState<string | null>(null);
+
   return (
     <section
       id="projects"
@@ -79,16 +82,32 @@ export default function Projects() {
                       <SwiperSlide
                         key={imageIndex}
                         className="w-[320px]! md:w-130!">
-                        <div className="relative aspect-video w-full overflow-hidden rounded-2xl shadow-2xl bg-zinc-900">
+                        <div
+                          className="relative aspect-video w-full overflow-hidden rounded-2xl shadow-2xl bg-zinc-900 cursor-pointer group"
+                          onClick={() => setFullscreenImage(image)}>
                           <Image
                             src={image}
                             alt={`${project.title} - Image ${imageIndex + 1}`}
                             fill
-                            className="object-contain"
+                            className="object-contain transition group-hover:scale-105"
                             quality={100}
                             priority={index === 0 && imageIndex === 0}
                             sizes="(max-width: 640px) 95vw, (max-width: 768px) 90vw, (max-width: 1024px) 50vw, 520px"
                           />
+                          <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition flex items-center justify-center">
+                            <svg
+                              className="w-12 h-12 text-white opacity-0 group-hover:opacity-100 transition"
+                              fill="none"
+                              viewBox="0 0 24 24"
+                              stroke="currentColor">
+                              <path
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                strokeWidth={2}
+                                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"
+                              />
+                            </svg>
+                          </div>
                         </div>
                       </SwiperSlide>
                     ))}
@@ -137,6 +156,50 @@ export default function Projects() {
           })}
         </div>
       </div>
+
+      {/* Fullscreen Modal */}
+      <AnimatePresence>
+        {fullscreenImage && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="fixed inset-0 z-50 bg-black/95 flex items-center justify-center p-4"
+            onClick={() => setFullscreenImage(null)}>
+            <button
+              className="absolute top-4 right-4 text-white/80 hover:text-white transition z-10"
+              onClick={() => setFullscreenImage(null)}>
+              <svg
+                className="w-8 h-8"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
+            <motion.div
+              initial={{ scale: 0.8 }}
+              animate={{ scale: 1 }}
+              exit={{ scale: 0.8 }}
+              className="relative w-full h-full max-w-7xl max-h-[90vh]"
+              onClick={(e) => e.stopPropagation()}>
+              <Image
+                src={fullscreenImage}
+                alt="Fullscreen view"
+                fill
+                className="object-contain"
+                quality={100}
+                sizes="100vw"
+              />
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </section>
   );
 }
