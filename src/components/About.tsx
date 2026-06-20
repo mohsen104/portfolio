@@ -9,8 +9,7 @@ export default function About() {
       <motion.div
         className="w-full flex items-center justify-center"
         initial={{ opacity: 0, x: -40 }}
-        whileInView={{ opacity: 1, x: 0 }}
-        viewport={{ once: true }}
+        animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.6, ease: "easeOut" }}>
         <div className="rounded-xl bg-white w-1/2">
           <AvatarIllustration />
@@ -19,14 +18,12 @@ export default function About() {
 
       <motion.div
         initial={{ opacity: 0, x: 40 }}
-        whileInView={{ opacity: 1, x: 0 }}
-        viewport={{ once: true }}
+        animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.6, ease: "easeOut", delay: 0.15 }}>
         <motion.h3
           className="mb-4 text-2xl font-extrabold"
           initial={{ opacity: 0, y: -16 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
+          animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, ease: "easeOut", delay: 0.25 }}>
           About <span className="font-black">Me</span>
         </motion.h3>
@@ -40,8 +37,7 @@ export default function About() {
             key={i}
             className="mt-4 text-xs leading-6 text-neutral-700 first:mt-0"
             initial={{ opacity: 0, y: 16 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            animate={{ opacity: 1, y: 0 }}
             transition={{
               duration: 0.5,
               ease: "easeOut",

@@ -6,5 +6,5 @@
 
 * {
   font-family: var(--font-jetbrains-mono), sans-serif;
-  scroll-behavior: smooth;
+  /* scroll-behavior: smooth; */
 }

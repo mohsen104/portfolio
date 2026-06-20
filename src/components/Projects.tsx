@@ -28,8 +28,7 @@ export default function Projects() {
         <motion.h3
           className="mb-20 text-center text-3xl font-bold md:text-5xl"
           initial={{ opacity: 0, y: -30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}>
+          animate={{ opacity: 1, y: 0 }}>
           Featured Projects
         </motion.h3>
 
@@ -41,12 +40,10 @@ export default function Projects() {
               <div
                 key={project.title}
                 className="grid items-center gap-12 lg:grid-cols-2">
-                {/* Swiper Container */}
                 <motion.div
                   className={reverse ? "lg:order-2" : ""}
                   initial={{ opacity: 0, x: reverse ? 60 : -60 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true }}
+                  animate={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.7 }}>
                   <Swiper
                     effect="coverflow"
@@ -114,12 +111,10 @@ export default function Projects() {
                   </Swiper>
                 </motion.div>
 
-                {/* Content */}
                 <motion.div
                   className={reverse ? "lg:order-1" : ""}
                   initial={{ opacity: 0, x: reverse ? -60 : 60 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true }}
+                  animate={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.7 }}>
                   <div className="text-6xl font-black text-white/10">
                     {String(index + 1).padStart(2, "0")}
@@ -157,7 +152,6 @@ export default function Projects() {
         </div>
       </div>
 
-      {/* Fullscreen Modal */}
       <AnimatePresence>
         {fullscreenImage && (
           <motion.div

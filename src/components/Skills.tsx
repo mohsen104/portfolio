@@ -21,8 +21,7 @@ export default function Skills() {
       <motion.h3
         className="mb-6 text-center text-2xl font-extrabold"
         initial={{ opacity: 0, y: -16 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
+        animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, ease: "easeOut" }}>
         My <span className="font-black">Skills</span>
       </motion.h3>
@@ -44,8 +43,7 @@ export default function Skills() {
             key={i}
             className="group rounded-xl border-2 border-neutral-900 p-4 transition -translate-y-1 shadow-[6px_6px_0_#000] hover:translate-0 hover:shadow-none bg-white"
             initial={{ opacity: 0, y: 24 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.4, delay: i * 0.07, ease: "easeOut" }}>
             <div className="mb-4 p-1 inline-flex h-10 w-10 items-center justify-center rounded-lg border-2 border-neutral-900 bg-white">
               {icon}

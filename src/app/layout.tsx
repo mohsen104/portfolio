@@ -22,9 +22,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="overflow-x-hidden">
+    <html lang="en">
       <body
-        className={`${jetBrainsMono.variable} bg-white text-black overflow-x-hidden antialiased w-screen`}>
+        className={`${jetBrainsMono.variable} bg-white text-black overflow-x-hidden antialiased`}>
         {children}
         <CustomCursor />
         <Analytics />

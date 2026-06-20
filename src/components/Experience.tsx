@@ -8,8 +8,7 @@ export default function Experience() {
         <motion.h3
           className="mb-8 text-center text-2xl font-extrabold"
           initial={{ opacity: 0, y: -16 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
+          animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, ease: "easeOut" }}>
           My <span className="font-black">Experience</span>
         </motion.h3>
@@ -84,8 +83,7 @@ export default function Experience() {
               key={i}
               className="rounded-xl border-2 border-white/15 bg-white/5 p-5"
               initial={{ opacity: 0, y: 28 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
+              animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: i * 0.12, ease: "easeOut" }}>
               <div className="flex flex-wrap gap-1 items-start justify-between">
                 <div>

@@ -7,12 +7,10 @@ export default function Contact() {
     <section
       id="contact"
       className="mx-auto grid max-w-6xl gap-16 px-6 py-20 md:grid-cols-2">
-      {/* Form Column */}
       <motion.form
         className="space-y-5"
         initial={{ opacity: 0, x: -40 }}
-        whileInView={{ opacity: 1, x: 0 }}
-        viewport={{ once: true }}
+        animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.6, ease: "easeOut" }}>
         <input
           placeholder="Your name"
@@ -63,8 +61,7 @@ export default function Contact() {
                 target="_blank"
                 rel="noopener"
                 initial={{ opacity: 0, y: 16 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
+                animate={{ opacity: 1, y: 0 }}
                 transition={{
                   duration: 0.4,
                   ease: "easeOut",
@@ -82,12 +79,10 @@ export default function Contact() {
         </div>
       </motion.form>
 
-      {/* Text Column */}
       <motion.div
         className="pt-2"
         initial={{ opacity: 0, x: 40 }}
-        whileInView={{ opacity: 1, x: 0 }}
-        viewport={{ once: true }}
+        animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.6, ease: "easeOut", delay: 0.15 }}>
         <h3 className="text-4xl font-black leading-tight md:text-5xl">
           Let's{" "}
@@ -103,8 +98,7 @@ export default function Contact() {
         <motion.p
           className="mt-5 max-w-xl leading-7 text-neutral-500"
           initial={{ opacity: 0, y: 16 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
+          animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, ease: "easeOut", delay: 0.3 }}>
           I seek to push the limits of creativity to create high-engaging,
           user-friendly, and memorable interactive experiences.
@@ -113,8 +107,7 @@ export default function Contact() {
         <motion.div
           className="mt-8 space-y-2 text-xl font-extrabold"
           initial={{ opacity: 0, y: 16 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
+          animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, ease: "easeOut", delay: 0.45 }}>
           <div>m.karimvand.84@gmail.com</div>
           <div>09196404757</div>
