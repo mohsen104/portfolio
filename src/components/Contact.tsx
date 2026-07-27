@@ -110,7 +110,7 @@ export default function Contact() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, ease: "easeOut", delay: 0.45 }}>
           <div>m.karimvand.84@gmail.com</div>
-          <div>09196404757</div>
+          <div>+989196404757</div>
         </motion.div>
       </motion.div>
     </section>

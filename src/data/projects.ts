@@ -117,4 +117,17 @@ export const projects = [
       "/projects/project-10-5.png",
     ],
   },
+
+  {
+    title: "Api Explorer",
+    description:
+      "A modern, open-source API testing and exploration tool built for developers.",
+    href: "https://api-explorer-woad.vercel.app/",
+    images: [
+      "/projects/project-11-1.png",
+      "/projects/project-11-2.png",
+      "/projects/project-11-3.png",
+      "/projects/project-11-4.png",
+    ],
+  },
 ];
