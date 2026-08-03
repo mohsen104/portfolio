@@ -1,13 +1,14 @@
 import type { Metadata } from "next";
-import { JetBrains_Mono } from "next/font/google";
-import "./globals.css";
+import localFont from "next/font/local";
 import { CustomCursor } from "@/components/shared/CustomCursor";
 import { Analytics } from "@vercel/analytics/next";
+import "./globals.css";
 
-const jetBrainsMono = JetBrains_Mono({
-  subsets: ["latin"],
-  display: "swap",
+const jetBrainsMono = localFont({
+  src: "../../public/fonts/JetBrainsMono/JetBrainsMono[wght].woff2",
   variable: "--font-jetbrains-mono",
+  display: "swap",
+  weight: "100 800",
 });
 
 export const metadata: Metadata = {

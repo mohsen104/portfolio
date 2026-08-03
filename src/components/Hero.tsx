@@ -27,7 +27,7 @@ export default function Hero() {
             I'm Mohsen Karimvand Front-end Developer with 5+ years of
             programming experience and 2.5+ years in professional environments,
             crafting performant, scalable applications with React.js,
-            TypeScript, and Next.js. Beyond front-end, I've built real back-end
+            TypeScript, and Next.js. Beyond front-end, I’ve built real back-end
             experience working with Node.js and Golang, covering RESTful APIs
             and server-side logic, which gives me a genuine full-stack
             perspective. I bring solid software engineering principles, a
