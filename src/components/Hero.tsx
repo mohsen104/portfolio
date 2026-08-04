@@ -11,7 +11,7 @@ export default function Hero() {
             Mohsen Karimvand
           </h1>
           <h2 className="mt-3 text-2xl font-extrabold md:text-3xl">
-            Frontend
+            <span className="mr-2">Frontend</span>
             <span className="border-b-4 border-black pb-1">Developer</span>
           </h2>
           <p className="mt-2 text-lg">
