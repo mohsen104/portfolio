@@ -9,6 +9,10 @@ const nextConfig: NextConfig = {
   experimental: {
     turbopackMinify: true,
     scrollRestoration: false,
+    optimizePackageImports: ["swiper"],
+  },
+  images: {
+    formats: ["image/avif", "image/webp"],
   },
   compiler: {
     removeConsole: process.env.NODE_ENV === "production",

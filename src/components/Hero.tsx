@@ -1,5 +1,3 @@
-"use client";
-import { motion } from "motion/react";
 import { IconButton } from "./shared/IconButton";
 import { GitHub, Linkedin, Mail } from "./shared/Icons";
 
@@ -7,22 +5,18 @@ export default function Hero() {
   return (
     <section className="mx-auto max-w-6xl px-4 pb-16 pt-12 md:pb-24 md:pt-16">
       <div className="grid items-center gap-10 md:grid-cols-2">
-        <motion.div
-          initial={{ opacity: 0, x: -40 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.6, ease: "easeOut" }}>
+        <div>
           <p className="text-lg">Hello I'am</p>
           <h1 className="mt-1 text-3xl font-black tracking-tight md:text-4xl">
             Mohsen Karimvand
           </h1>
           <h2 className="mt-3 text-2xl font-extrabold md:text-3xl">
-            Frontend{" "}
+            Frontend
             <span className="border-b-4 border-black pb-1">Developer</span>
           </h2>
           <p className="mt-2 text-lg">
             Based In <span className="font-extrabold">Iran</span>.
           </p>
-
           <p className="mt-5 max-w-xl text-xs leading-5 text-neutral-600">
             I'm Mohsen Karimvand Front-end Developer with 5+ years of
             programming experience and 2.5+ years in professional environments,
@@ -34,12 +28,7 @@ export default function Hero() {
             continuous learning mindset, and a genuine passion for staying
             current with modern technologies and best practices.
           </p>
-
-          <motion.div
-            className="mt-6 flex items-center gap-3"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.4, ease: "easeOut" }}>
+          <div className="mt-6 flex items-center gap-3">
             <a
               href="https://github.com/mohsen104"
               target="_blank"
@@ -64,16 +53,12 @@ export default function Hero() {
                 <Mail />
               </IconButton>
             </a>
-          </motion.div>
-        </motion.div>
+          </div>
+        </div>
 
-        <motion.div
-          className="relative mx-auto w-full max-w-md"
-          initial={{ opacity: 0, x: 40 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}>
+        <div className="relative mx-auto w-full max-w-md">
           <HeroIllustration />
-        </motion.div>
+        </div>
       </div>
     </section>
   );

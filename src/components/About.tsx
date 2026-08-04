@@ -1,52 +1,31 @@
-"use client";
-import { motion } from "motion/react";
-
 export default function About() {
   return (
     <section
       id="about"
       className="mx-auto max-w-6xl grid-cols-1 md:grid-cols-2 gap-8 px-4 py-16 grid md:px-6">
-      <motion.div
-        className="w-full flex items-center justify-center"
-        initial={{ opacity: 0, x: -40 }}
-        animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.6, ease: "easeOut" }}>
+      <div className="w-full flex items-center justify-center">
         <div className="rounded-xl bg-white w-1/2">
           <AvatarIllustration />
         </div>
-      </motion.div>
+      </div>
 
-      <motion.div
-        initial={{ opacity: 0, x: 40 }}
-        animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.6, ease: "easeOut", delay: 0.15 }}>
-        <motion.h3
-          className="mb-4 text-2xl font-extrabold"
-          initial={{ opacity: 0, y: -16 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, ease: "easeOut", delay: 0.25 }}>
+      <div>
+        <h3 className="mb-4 text-2xl font-extrabold">
           About <span className="font-black">Me</span>
-        </motion.h3>
+        </h3>
 
         {[
           `I'm a Frontend Developer with over 5 years of programming experience and more than 2.5 years of professional experience building modern web applications. My expertise lies in React.js, Next.js, TypeScript, and Tailwind CSS, where I focus on creating scalable, maintainable, and high-performance user interfaces that deliver excellent user experiences.`,
           `Throughout my career, I have contributed to a variety of projects, including enterprise dashboards, GIS systems, real estate platforms, ERP solutions, and IoT applications. Working across different industries has helped me develop a strong understanding of software architecture, performance optimization, reusable component design, and collaborative development workflows.`,
           `Beyond frontend development, I also have experience with backend technologies such as Node.js and Golang, which enables me to better understand full-stack architectures and communicate effectively with backend teams. I am passionate about continuous learning, modern engineering practices, testing, CI/CD, and building products that are both technically robust and user-focused.`,
         ].map((text, i) => (
-          <motion.p
+          <p
             key={i}
-            className="mt-4 text-xs leading-6 text-neutral-700 first:mt-0"
-            initial={{ opacity: 0, y: 16 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{
-              duration: 0.5,
-              ease: "easeOut",
-              delay: 0.3 + i * 0.1,
-            }}>
+            className="mt-4 text-xs leading-6 text-neutral-700 first:mt-0">
             {text}
-          </motion.p>
+          </p>
         ))}
-      </motion.div>
+      </div>
     </section>
   );
 }

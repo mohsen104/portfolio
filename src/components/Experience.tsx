@@ -1,17 +1,10 @@
-"use client";
-import { motion } from "motion/react";
-
 export default function Experience() {
   return (
     <section className="bg-neutral-900 py-16 text-white" id="experience">
       <div className="mx-auto max-w-6xl px-4 md:px-6">
-        <motion.h3
-          className="mb-8 text-center text-2xl font-extrabold"
-          initial={{ opacity: 0, y: -16 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, ease: "easeOut" }}>
+        <h3 className="mb-8 text-center text-2xl font-extrabold">
           My <span className="font-black">Experience</span>
-        </motion.h3>
+        </h3>
 
         <div className="space-y-10 text-sm leading-6">
           {[
@@ -79,12 +72,9 @@ export default function Experience() {
               ],
             },
           ].map((exp, i) => (
-            <motion.article
+            <article
               key={i}
-              className="rounded-xl border-2 border-white/15 bg-white/5 p-5"
-              initial={{ opacity: 0, y: 28 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: i * 0.12, ease: "easeOut" }}>
+              className="rounded-xl border-2 border-white/15 bg-white/5 p-5">
               <div className="flex flex-wrap gap-1 items-start justify-between">
                 <div>
                   <h4 className="text-lg font-extrabold">{exp.company}</h4>
@@ -110,7 +100,7 @@ export default function Experience() {
                   )}
                 </div>
               ))}
-            </motion.article>
+            </article>
           ))}
         </div>
       </div>

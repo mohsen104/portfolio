@@ -10,13 +10,21 @@ import Skills from "@/components/Skills";
 export default function Page() {
   return (
     <>
+      {/* Server */}
       <Header />
+      {/* Server */}
       <Hero />
+      {/* Server */}
       <Skills />
-      <Experience />
-      <About />
+      {/* Client */}
       <Projects />
+      {/* Server */}
+      <About />
+      {/* Server */}
+      <Experience />
+      {/* Server */}
       <Contact />
+      {/* Server */}
       <Footer />
     </>
   );
