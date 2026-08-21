@@ -18,15 +18,11 @@ export default function Hero() {
             Based In <span className="font-extrabold">Iran</span>.
           </p>
           <p className="mt-5 max-w-xl text-xs leading-5 text-neutral-600">
-            I'm Mohsen Karimvand Front-end Developer with 5+ years of
-            programming experience and 2.5+ years in professional environments,
-            crafting performant, scalable applications with React.js,
-            TypeScript, and Next.js. Beyond front-end, I’ve built real back-end
-            experience working with Node.js and Golang, covering RESTful APIs
-            and server-side logic, which gives me a genuine full-stack
-            perspective. I bring solid software engineering principles, a
-            continuous learning mindset, and a genuine passion for staying
-            current with modern technologies and best practices.
+            Frontend Engineer with 3+ years of professional experience building
+            scalable web applications with React, TypeScript, and Next.js.
+            Experienced in high-performance enterprise dashboards, real-time GIS
+            platforms, frontend architecture, testing, and CI/CD, with
+            additional backend experience in Node.js and Go.
           </p>
           <div className="mt-6 flex items-center gap-3">
             <a

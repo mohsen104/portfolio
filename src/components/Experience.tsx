@@ -14,25 +14,12 @@ export default function Experience() {
               date: "Mar 2025 - PRESENT",
               projects: [
                 {
-                  title: "Vehicle Management Dashboard",
                   items: [
-                    "Collaborated in a flat-structured team to build a nationwide vehicle management dashboard using React.js, TypeScript, Tailwind, and Ant Design",
-                    "Optimized build pipeline with Vite and React 19, improving Lighthouse scores from 50 to 95 and reducing bundle size by ~80%",
-                    "Engineered a high-performance GIS system with MapLibre, rendering 5,000+ real-time data points with under 100ms latency",
-                    "Integrated real-time communication via WebSocket and SignalR for live vehicle tracking",
-                    "Established a type-safe API layer using generic APIResponse types, significantly reducing runtime type errors",
-                    "Shipped a secure Authentication & Authorization system supporting 1,000+ users across 3 roles",
-                    "Dockerized the frontend and configured Husky, Commitlint, Semantic Release, and MSW to streamline the release pipeline",
-                  ],
-                },
-                {
-                  title: "IOT Platform",
-                  items: [
-                    "Architected a Monorepo with Turborepo, reducing cross-package build time by ~80%",
-                    "Crafted UI with React, Vite, and Material UI (MUI)",
-                    "Wrote 50+ integration tests using Playwright and MSW, validating API contracts and critical user flows across key application modules",
-                    "Documented and maintained a component library in Storybook with 20+ components",
-                    "Configured CI/CD pipelines via GitLab, reducing deployment time from 20 min to 4 min",
+                    "Built nationwide fleet and IoT platforms using React, TypeScript, Vite, Tailwind CSS, Ant Design, and MUI, contributing in a flat-structured cross-functional team.",
+                    "Improved frontend performance by optimizing Vite/React 19 builds, increasing Lighthouse scores from 50 to 95 and reducing bundle size by ~80%.",
+                    "Engineered a real-time GIS system with MapLibre, WebSocket, and SignalR, rendering 5,000+ live data points with sub-100ms latency.",
+                    "Architected scalable frontend infrastructure with Turborepo, Storybook, and type-safe API layers, reducing cross-package build times by ~80% and maintaining 20+ reusable components.",
+                    "Strengthened quality and delivery workflows with 50+ Playwright/MSW integration tests, GitLab CI/CD, Docker, Husky, and Semantic Release, reducing deployment time from 20 to 4 minutes.",
                   ],
                 },
               ],
@@ -43,13 +30,11 @@ export default function Experience() {
               date: "Jul 2024 - Apr 2025",
               projects: [
                 {
-                  title:
-                    "Architected a responsive real estate management platform using React.js ,Next.js and Tailwind with performance-focused architecture",
                   items: [
-                    "Reduced initial bundle size by ~70% via Code Splitting, Lazy Loading, and Tree Shaking",
-                    "Constructed PWA support, improving offline accessibility and overall user engagement",
-                    "Maintained code quality across 40+ components using ESLint and Prettier, achieving near-zero lint errors",
-                    "Integrated a multi-step property listing form with React Hook Form and Zod schema validation, featuring a custom pure-HTML file uploader and drag-and-drop image reordering — delivering robust UX with full client-side validation",
+                    "Architected and developed a responsive real estate management platform using React.js, Next.js, and Tailwind CSS, with a performance-focused frontend architecture supporting scalable feature development.",
+                    "Reduced initial JavaScript bundle size by ~70% through code splitting, lazy loading, and tree shaking, improving application load performance and user experience.",
+                    "Implemented PWA capabilities with offline support and installable experiences, improving accessibility and enabling users to interact with key application features in low-connectivity environments.",
+                    "Engineered a multi-step property listing workflow using React Hook Form and Zod, with client-side validation, custom file uploads, and drag-and-drop image reordering.",
                   ],
                 },
               ],
@@ -60,13 +45,11 @@ export default function Experience() {
               date: "Sep 2023 - Feb 2024",
               projects: [
                 {
-                  title:
-                    "Developed and Completed 4+ projects using Tailwind and JavaScript, including:",
                   items: [
-                    "Launched Task Manager and CRM modules for a large-scale ERP platform serving 2,000+ users across multiple teams",
-                    "Built a responsive website for IoT services and products with a structured product catalog",
-                    "Delivered an international service website for a UAE-based aviation agency",
-                    "Collaborated with UI/UX and backend teams on API integration and agile sprint planning",
+                    "Developed and launched Task Management and CRM modules for a large-scale ERP platform serving 2,000+ users across multiple teams, using modern frontend technologies.",
+                    "Built a responsive IoT services and products website with a structured product catalog, reusable UI components, and responsive layouts across desktop and mobile devices.",
+                    "Developed and delivered an international service website for a UAE-based aviation agency, focusing on responsive design, usability, and cross-device compatibility.",
+                    "Collaborated with UI/UX designers and backend engineers to integrate REST APIs, translate designs into reusable frontend components, and participate in Agile sprint planning and delivery.",
                   ],
                 },
               ],
@@ -89,7 +72,6 @@ export default function Experience() {
 
               {exp.projects.map((project, j) => (
                 <div key={j} className="space-y-2">
-                  <div className="font-semibold">{project.title}</div>
                   <ul className="list-disc space-y-1 pl-5 text-neutral-200">
                     {project.items.map((item, k) => (
                       <li key={k}>{item}</li>
