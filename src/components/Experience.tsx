@@ -9,47 +9,51 @@ export default function Experience() {
         <div className="space-y-10 text-sm leading-6">
           {[
             {
-              company: "Fara Ofogh",
-              role: "Front-end Developer",
-              date: "Mar 2025 - PRESENT",
+              company: "Fara Ofogh Company",
+              role: "Senior Frontend Developer / Team Lead",
+              date: "Apr 2025 – Present",
               projects: [
                 {
                   items: [
-                    "Built nationwide fleet and IoT platforms using React, TypeScript, Vite, Tailwind CSS, Ant Design, and MUI, contributing in a flat-structured cross-functional team.",
-                    "Improved frontend performance by optimizing Vite/React 19 builds, increasing Lighthouse scores from 50 to 95 and reducing bundle size by ~80%.",
-                    "Engineered a real-time GIS system with MapLibre, WebSocket, and SignalR, rendering 5,000+ live data points with sub-100ms latency.",
-                    "Architected scalable frontend infrastructure with Turborepo, Storybook, and type-safe API layers, reducing cross-package build times by ~80% and maintaining 20+ reusable components.",
-                    "Strengthened quality and delivery workflows with 50+ Playwright/MSW integration tests, GitLab CI/CD, Docker, Husky, and Semantic Release, reducing deployment time from 20 to 4 minutes.",
+                    "Led frontend development across 2 large-scale platforms, owning architecture and technical direction for vehicle tracking and IoT systems.",
+                    "Architected and built a Turborepo monorepo from the ground up, consolidating 5+ applications and shared packages for the IoT platform.",
+                    "Built 50+ reusable React components for a real-time fleet tracking platform, integrating live vehicle data through SignalR.",
+                    "Engineered a high-performance MapLibre live map capable of rendering 5,000+ vehicles simultaneously while maintaining smooth real-time interactions.",
+                    "Automated CI/CD for 2 production platforms, reducing deployment time from 20 minutes to 5 minutes.",
+                    "Introduced integration testing with Vitest and React Testing Library, covering 40+ critical user flows and reducing regressions.",
+                    "Promoted to lead frontend development within 1 year, owning architecture, technical direction, and team-level engineering decisions.",
                   ],
                 },
               ],
             },
             {
-              company: "Dubz",
-              role: "Front-end Developer",
-              date: "Jul 2024 - Apr 2025",
+              company: "Dubz Startup Company",
+              role: "Frontend Developer",
+              date: "Jul 2024 – Mar 2025",
               projects: [
                 {
                   items: [
-                    "Architected and developed a responsive real estate management platform using React.js, Next.js, and Tailwind CSS, with a performance-focused frontend architecture supporting scalable feature development.",
-                    "Reduced initial JavaScript bundle size by ~70% through code splitting, lazy loading, and tree shaking, improving application load performance and user experience.",
-                    "Implemented PWA capabilities with offline support and installable experiences, improving accessibility and enabling users to interact with key application features in low-connectivity environments.",
-                    "Engineered a multi-step property listing workflow using React Hook Form and Zod, with client-side validation, custom file uploads, and drag-and-drop image reordering.",
+                    "Led frontend development of a real estate management platform used by 1,000+ property managers and agents.",
+                    "Contributed to the B2C website built with Next.js, collaborating with the frontend team.",
+                    "Built 10+ complex, schema-validated forms using React Hook Form and Zod, standardizing validation across the admin platform.",
+                    "Built a PWA architecture with offline support and optimized caching, reducing redundant API requests by 50%.",
+                    "Reduced initial bundle size by 60% through lazy loading and code splitting, improving page load performance.",
                   ],
                 },
               ],
             },
             {
-              company: "Manzoomeh Negaran",
-              role: "Front-end Developer",
-              date: "Sep 2023 - Feb 2024",
+              company: "Manzoomeh Negaran Holding",
+              role: "Frontend Developer",
+              date: "Sep 2023 – Mar 2024",
               projects: [
                 {
                   items: [
-                    "Developed and launched Task Management and CRM modules for a large-scale ERP platform serving 2,000+ users across multiple teams, using modern frontend technologies.",
-                    "Built a responsive IoT services and products website with a structured product catalog, reusable UI components, and responsive layouts across desktop and mobile devices.",
-                    "Developed and delivered an international service website for a UAE-based aviation agency, focusing on responsive design, usability, and cross-device compatibility.",
-                    "Collaborated with UI/UX designers and backend engineers to integrate REST APIs, translate designs into reusable frontend components, and participate in Agile sprint planning and delivery.",
+                    "Developed the accounting module for a B2B SaaS platform serving 2,000+ users across 100+ client companies.",
+                    "Contributed to the Task Management module, implementing 10+ core workflows across the B2B SaaS platform.",
+                    "Delivered 2 production marketing websites from Figma designs for an IoT services platform and a UAE-based aviation company.",
+                    "Delivered Tailwind CSS training to frontend teams across 3 companies, standardizing styling practices across the holding group.",
+                    "Developed a custom VS Code extension used by 15+ developers to centralize code snippet management.",
                   ],
                 },
               ],

@@ -15,9 +15,11 @@ export default function About() {
         </h3>
 
         {[
-          `I'm a Frontend Developer with over 5 years of programming experience and more than 2.5 years of professional experience building modern web applications. My expertise lies in React.js, Next.js, TypeScript, and Tailwind CSS, where I focus on creating scalable, maintainable, and high-performance user interfaces that deliver excellent user experiences.`,
-          `Throughout my career, I have contributed to a variety of projects, including enterprise dashboards, GIS systems, real estate platforms, ERP solutions, and IoT applications. Working across different industries has helped me develop a strong understanding of software architecture, performance optimization, reusable component design, and collaborative development workflows.`,
-          `Beyond frontend development, I also have experience with backend technologies such as Node.js and Golang, which enables me to better understand full-stack architectures and communicate effectively with backend teams. I am passionate about continuous learning, modern engineering practices, testing, CI/CD, and building products that are both technically robust and user-focused.`,
+          "I’m a Senior Frontend Developer focused on building scalable, production-grade applications with React, Next.js, and TypeScript, with a strong emphasis on clean architecture and maintainable code.",
+          "I have hands-on experience designing frontend architectures from the ground up, including monorepos, modular systems, reusable component libraries, and scalable application structures for large-scale products.",
+          "I care deeply about frontend performance and reliability, from optimizing bundle size and API usage to building real-time interfaces capable of handling thousands of concurrent data points.",
+          "Beyond writing code, I contribute to technical direction, engineering standards, developer experience, and team-level decisions, helping frontend teams build more consistent and maintainable systems.",
+          "I’m continuously expanding my software engineering skills beyond the frontend, with a strong interest in system design, backend engineering, distributed systems, and modern development practices.",
         ].map((text, i) => (
           <p
             key={i}

@@ -11,18 +11,17 @@ export default function Hero() {
             Mohsen Karimvand
           </h1>
           <h2 className="mt-3 text-2xl font-extrabold md:text-3xl">
-            <span className="mr-2">Frontend</span>
-            <span className="border-b-4 border-black pb-1">Developer</span>
+            Senior Frontend Developer
           </h2>
           <p className="mt-2 text-lg">
             Based In <span className="font-extrabold">Iran</span>.
           </p>
           <p className="mt-5 max-w-xl text-xs leading-5 text-neutral-600">
-            Frontend Engineer with 3+ years of professional experience building
-            scalable web applications with React, TypeScript, and Next.js.
-            Experienced in high-performance enterprise dashboards, real-time GIS
-            platforms, frontend architecture, testing, and CI/CD, with
-            additional backend experience in Node.js and Go.
+            Senior Frontend Developer with 3 years of experience building
+            large-scale, production-grade applications using React, Next.js, and
+            TypeScript. Skilled in architecting scalable frontend systems,
+            including monorepos and modular architectures, with a focus on
+            performance, maintainability, and developer experience.
           </p>
           <div className="mt-6 flex items-center gap-3">
             <a
