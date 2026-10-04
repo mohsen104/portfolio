@@ -17,11 +17,13 @@ export default function Hero() {
             Based In <span className="font-extrabold">Iran</span>.
           </p>
           <p className="mt-5 max-w-xl text-xs leading-5 text-neutral-600">
-            Senior Frontend Developer with 3 years of experience building
-            large-scale, production-grade applications using React, Next.js, and
-            TypeScript. Skilled in architecting scalable frontend systems,
-            including monorepos and modular architectures, with a focus on
-            performance, maintainability, and developer experience.
+            Senior Frontend Developer with 3 years of production experience in
+            React, TypeScript, and Next.js, currently leading frontend on a
+            real-time IoT and fleet platform. Structures apps by feature, uses
+            TanStack Query for server state and Zustand for client state, and
+            treats loading, error, and auth as part of the UI. Day-to-day work
+            covers Core Web Vitals, GitLab CI, and shipping with Cursor and
+            Claude.
           </p>
           <div className="mt-6 flex items-center gap-3">
             <a
