@@ -15,13 +15,12 @@ export default function Experience() {
               projects: [
                 {
                   items: [
-                    "Promoted to frontend lead within the first year. Own architecture, code review for the vehicle-tracking and IoT platforms.",
-                    "Architected a Turborepo monorepo (5+ apps and shared packages, feature-based layout) and shipped it with multi-stage GitLab CI and Docker, one production image per app.",
-                    "Built 50+ React components, including compound components, and a MapLibre map rendering 5,000+ vehicles over SignalR, with effect and subscription cleanup on long-lived sessions.",
-                    "Improved LCP, INP, and CLS on the latest app. Server state is on TanStack Query, with explicit loading and error states.",
-                    "Added frontend unit tests with Jest, Vitest and React Testing Library for 40+ critical flows, plus Playwright end-to-end tests.",
-                    "Set auth to httpOnly cookies and treated untrusted input as an XSS boundary. Shipped a dark theme with readable contrast, semantic HTML, control labels, and keyboard access.",
-                    "Use Cursor and Claude daily (AGENTS.md, Cursor rules, Figma MCP); generated diffs go through the same review before merge.",
+                    "Promoted to Lead within a year; led frontend architecture, code quality, and delivery for a team of 3, set code review standards, and mentored 2 junior developers.",
+                    "Architected a Turborepo monorepo from scratch: 5+ apps, shared packages, feature-based layout, multi-stage GitLab CI.",
+                    "Built a real-time GIS map system with MapLibre and WebSocket, rendering 5,000+ markers and polygons smoothly via clustering.",
+                    "Reached ~80% test coverage with Jest, Vitest, and React Testing Library across 40+ critical flows, plus Playwright E2E tests.",
+                    "Improved LCP from 4.5s to 0.8s on the latest app, along with INP and CLS, with server state managed through TanStack Query.",
+                    "Implemented secure httpOnly cookie authentication across all apps, protecting sessions from XSS-based token theft.",
                   ],
                 },
               ],
@@ -33,9 +32,9 @@ export default function Experience() {
               projects: [
                 {
                   items: [
-                    "Led frontend for a real-estate platform used by 1,000+ property managers and agents, including the Next.js B2C site: React Server Components, streaming with Suspense, a server/client split, and semantic HTML for SEO.",
-                    "Built 10+ forms with React Hook Form and Zod, each validated from a single schema.",
-                    "Shipped a PWA with offline caching that cut redundant API requests by 50%, and cut the initial bundle by 60% with lazy loading and code splitting.",
+                    "Built a real estate listing management system and admin dashboard serving 1,000+ users, managers and agents.",
+                    "Built 10+ complex forms with React Hook Form and Zod, reducing validation errors and improving form completion rate by 80%.",
+                    "Developed an installable PWA with offline caching, cutting initial bundle size by 60% through lazy loading and code splitting.",
                   ],
                 },
               ],
@@ -47,9 +46,10 @@ export default function Experience() {
               projects: [
                 {
                   items: [
-                    "Built the accounting module of a B2B SaaS product (2,000+ users, 100+ companies) and 10+ workflows in task management.",
-                    "Shipped two production marketing sites from Figma, for an IoT company and a UAE aviation company, with semantic HTML for SEO.",
-                    "Mentored frontend developers in a Tailwind CSS training series for teams at three companies, and built a VS Code extension used by 15+ developers.",
+                    "Developed accounting and task management modules of a B2B ERP used by 2,000+ users and companies.",
+                    "Delivered an IoT product catalog and a UAE aviation products platform from Figma designs, with semantic HTML and SEO.",
+                    "Built a VS Code snippets extension for the internal component library, speeding up 15+ developers.",
+                    "Trained the holding’s frontend teams on Tailwind CSS for adoption across subsidiary companies.",
                   ],
                 },
               ],
