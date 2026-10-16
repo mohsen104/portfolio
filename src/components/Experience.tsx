@@ -54,6 +54,21 @@ export default function Experience() {
                 },
               ],
             },
+            {
+              company: "Freelance (Remote)",
+              role: "Frontend Developer",
+              date: "Oct 2021 – Sep 2023",
+              projects: [
+                {
+                  items: [
+                    "Built the frontend of a crypto trading platform with real-time price streaming for currencies and gold.",
+                    "Developed a full-stack proctored exam platform with classroom management and anti-cheating protection.",
+                    "Used React, Next.js, TypeScript, Tailwind, and shadcn/ui on the frontend, with Go (Gin), PostgreSQL, and Redis on the backend.",
+                    "Owned both projects end to end, from architecture to deployment.",
+                  ],
+                },
+              ],
+            },
           ].map((exp, i) => (
             <article
               key={i}
