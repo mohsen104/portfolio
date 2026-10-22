@@ -17,8 +17,8 @@ export default function Hero() {
             Based In <span className="font-extrabold">Iran</span>.
           </p>
           <p className="mt-5 max-w-xl text-xs leading-5 text-neutral-600">
-            Senior Frontend Developer with 5 years of production experience in
-            React, TypeScript, and Next.js, plus hands-on backend work in Go and
+            Frontend Developer with 3 years of production experience in React,
+            TypeScript, and Next.js, plus hands-on backend work in Go and
             Node.js. Experienced in leading teams, reviewing code, and mentoring
             developers through training and internal tooling. A fast,
             self-driven learner who enjoys collaborating across product, design,

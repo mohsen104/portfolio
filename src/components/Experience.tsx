@@ -18,9 +18,9 @@ export default function Experience() {
                     "Promoted to Lead within a year; led frontend architecture, code quality, and delivery for a team of 3, set code review standards, and mentored 2 junior developers.",
                     "Architected a Turborepo monorepo from scratch: 5+ apps, shared packages, feature-based layout, multi-stage GitLab CI.",
                     "Built a real-time GIS map system with MapLibre and WebSocket, rendering 5,000+ markers and polygons smoothly via clustering.",
-                    "Reached ~80% test coverage with Jest, Vitest, and React Testing Library across 40+ critical flows, plus Playwright E2E tests.",
+                    "Reached 80% test coverage with Jest, Vitest, and React Testing Library across 40+ critical flows, plus Playwright E2E tests.",
                     "Improved LCP from 4.5s to 0.8s on the latest app, along with INP and CLS, with server state managed through TanStack Query.",
-                    "Implemented secure httpOnly cookie authentication across all apps, protecting sessions from XSS-based token theft.",
+                    "Implemented httpOnly cookie auth across 5 apps, resolving 3 high-severity findings from a security audit/pentest",
                   ],
                 },
               ],
@@ -32,8 +32,8 @@ export default function Experience() {
               projects: [
                 {
                   items: [
-                    "Built a real estate listing management system and admin dashboard serving 1,000+ users, managers and agents.",
-                    "Built 10+ complex forms with React Hook Form and Zod, reducing validation errors and improving form completion rate by 80%.",
+                    "Built a real estate listing management system and admin dashboard serving 1,000+ users (managers and agents).",
+                    "Built 10+ complex forms with React Hook Form and Zod, using schema-based validation to reduce input errors and raise form completion rate by 60%.",
                     "Developed an installable PWA with offline caching, cutting initial bundle size by 60% through lazy loading and code splitting.",
                   ],
                 },
@@ -46,25 +46,10 @@ export default function Experience() {
               projects: [
                 {
                   items: [
-                    "Developed accounting and task management modules of a B2B ERP used by 2,000+ users and companies.",
-                    "Delivered an IoT product catalog and a UAE aviation products platform from Figma designs, with semantic HTML and SEO.",
-                    "Built a VS Code snippets extension for the internal component library, speeding up 15+ developers.",
-                    "Trained the holding’s frontend teams on Tailwind CSS for adoption across subsidiary companies.",
-                  ],
-                },
-              ],
-            },
-            {
-              company: "Freelance (Remote)",
-              role: "Frontend Developer",
-              date: "Oct 2021 – Sep 2023",
-              projects: [
-                {
-                  items: [
-                    "Built the frontend of a crypto trading platform with real-time price streaming for currencies and gold.",
-                    "Developed a full-stack proctored exam platform with classroom management and anti-cheating protection.",
-                    "Used React, Next.js, TypeScript, Tailwind, and shadcn/ui on the frontend, with Go (Gin), PostgreSQL, and Redis on the backend.",
-                    "Owned both projects end to end, from architecture to deployment.",
+                    "Developed accounting and task management modules for a B2B ERP used by 2,000+ users across multiple companies.",
+                    "Delivered an IoT product catalog and a UAE aviation products platform from Figma designs, with semantic HTML and SEO-optimized pages (Lighthouse SEO 98/100).",
+                    "Built a VS Code snippets extension for the internal component library, cutting repetitive component boilerplate for 15+ developers.",
+                    "Trained 15 frontend developers across 3 subsidiary companies on Tailwind CSS, standardizing styling across their products",
                   ],
                 },
               ],
